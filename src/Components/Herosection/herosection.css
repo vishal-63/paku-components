@@ -1,0 +1,146 @@
+.herosection {
+  background-color: #f9f8ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+}
+
+.herosectionWrapper {
+  background-color: #f9f8ff;
+  position: absolute;
+  top: 124px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.herosectionSlider {
+  width: 100%;
+  height: 568px;
+}
+
+button.slick-arrow.slick-prev::before,
+button.slick-arrow.slick-next::before {
+  display: none;
+}
+
+.herosectionSlide {
+  width: 100%;
+  overflow: hidden;
+}
+
+.heroImage {
+  width: 100%;
+  height: 597px;
+  overflow: hidden;
+  opacity: 0.4;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.heroText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroHeadline {
+  text-transform: uppercase;
+  margin: 16px;
+  font-size: 40px;
+  color: #1a1a1a;
+}
+
+.heroSubtitle {
+  font-size: 24px;
+  color: #222222;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 1400px) {
+  .herosectionSlider,
+  .herosectionSlide,
+  .heroImage {
+    width: 1100px;
+  }
+
+  .herosectionSlider {
+    height: 469px;
+  }
+}
+
+@media screen and (max-width: 1050px) {
+  .herosectionSlider,
+  .herosectionSlide,
+  .heroImage {
+    width: 100vw;
+  }
+
+  .herosectionSlider {
+    height: 570px;
+  }
+}
+
+/* @media screen and (max-width: 768px) {
+  .herosectionSlider,
+  .herosectionSlide,
+  .heroImage {
+    width: 718px;
+  }
+
+  .herosectionSlider {
+    height: 300px;
+  }
+} */
+
+@media screen and (max-width: 540px) {
+  /* .herosectionSlider,
+  .herosectionSlide,
+  .heroImage {
+    width: 500px;
+  }
+
+  .herosectionSlider {
+    height: 202px;
+  } */
+
+  .heroHeadline {
+    font-size: 30px;
+    margin: 8px;
+  }
+
+  .heroSubtitle {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  /* .herosectionSlider,
+  .herosectionSlide,
+  .heroImage {
+    width: 300px;
+  }
+
+  .herosectionSlider {
+    height: 130px;
+  } */
+
+  .heroHeadline {
+    font-size: 20px;
+    margin: 6px;
+  }
+
+  .heroSubtitle {
+    font-size: 12px;
+  }
+}
