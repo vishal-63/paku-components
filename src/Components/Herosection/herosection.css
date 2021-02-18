@@ -5,7 +5,6 @@
   align-items: center;
   z-index: 1;
   width: 100%;
-  height: 100%;
 }
 
 .herosectionWrapper {
@@ -15,7 +14,6 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 100%;
   width: 100%;
   overflow: hidden;
 }
@@ -25,10 +23,10 @@
   height: 568px;
 }
 
-button.slick-arrow.slick-prev::before,
+/* button.slick-arrow.slick-prev::before,
 button.slick-arrow.slick-next::before {
   display: none;
-}
+} */
 
 .herosectionSlide {
   width: 100%;
@@ -125,15 +123,9 @@ button.slick-arrow.slick-next::before {
 }
 
 @media screen and (max-width: 420px) {
-  /* .herosectionSlider,
-  .herosectionSlide,
-  .heroImage {
-    width: 300px;
+  .herosectionWrapper {
+    transform: translateY(-15px);
   }
-
-  .herosectionSlider {
-    height: 130px;
-  } */
 
   .heroHeadline {
     font-size: 20px;
@@ -142,5 +134,11 @@ button.slick-arrow.slick-next::before {
 
   .heroSubtitle {
     font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .herosectionWrapper {
+    height: 595px;
   }
 }
