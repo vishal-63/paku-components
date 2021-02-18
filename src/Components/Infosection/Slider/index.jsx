@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
-import "./Slider.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import "./Slider.css";
 import img1 from "../../../Images/honda.png";
 import img2 from "../../../Images/hyundai.png";
 import img3 from "../../../Images/toyota.png";
@@ -18,6 +20,7 @@ import img12 from "../../../Images/swaraj.png";
 
 class BrandSlider extends Component {
   render() {
+    AOS.init({ duration: 2000 });
     const settings = {
       className: "center",
       //   centerMode: true,
@@ -53,7 +56,7 @@ class BrandSlider extends Component {
       ],
     };
     return (
-      <div className="sliderContainer">
+      <div className="sliderContainer" data-aos="fade-up">
         <h2 className="sliderTitle">Brands we are associated with</h2>
         <Slider {...settings} className="slider">
           <div className="sliderImg">

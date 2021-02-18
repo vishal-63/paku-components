@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import Topbar from "../Components/Topbar";
 import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
@@ -11,11 +13,13 @@ const Home = () => {
   const toggle = () => {
     setIsOpen(!isOpen);
   };
+
+  AOS.init({ duration: 2000 });
   return (
     <>
       <Topbar />
       <Navbar toggle={toggle} />
-      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} data-aos="slide-down" />
       <Herosection />
       <Infosection />
     </>
