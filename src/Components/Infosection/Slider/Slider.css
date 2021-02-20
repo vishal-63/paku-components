@@ -1,7 +1,7 @@
 .sliderContainer {
-  background-color: #f9f8ff;
+  background-color: #f9f8fb;
   max-width: 1300px;
-  margin: 0 auto;
+  margin: 60px auto;
   padding: 24px 48px;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,7 @@
 }
 
 .slider {
-  max-width: 1300px;
+  max-width: 1000px;
 }
 
 .slick-prev:before,
@@ -27,6 +27,7 @@
 }
 
 .sliderImg {
+  width: 150px;
   padding-left: 25px;
 }
 
@@ -62,8 +63,12 @@
 }
 
 @media screen and (max-width: 420px) {
+  .sliderContainer {
+    margin-bottom: 0px;
+  }
+
   .sliderImg {
-    padding-left: 30px;
+    padding-left: 60px;
   }
 
   .slider {

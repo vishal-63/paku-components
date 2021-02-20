@@ -26,7 +26,7 @@ class BrandSlider extends Component {
       //   centerMode: true,
       infinite: true,
       //   centerPadding: "60px",
-      slidesToShow: 4,
+      slidesToShow: 5,
       slidesToScroll: 1,
       speed: 500,
       autoplay: true,
@@ -56,7 +56,7 @@ class BrandSlider extends Component {
       ],
     };
     return (
-      <div className="sliderContainer" data-aos="fade-up">
+      <div className="sliderContainer" data-aos="zoom-in">
         <h2 className="sliderTitle">Brands we are associated with</h2>
         <Slider {...settings} className="slider">
           <div className="sliderImg">

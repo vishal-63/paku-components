@@ -15,7 +15,7 @@ class Cards extends Component {
       <div className="cardSectionContainer">
         <div
           className="cardSectionWrapper"
-          data-aos="slide-up"
+          data-aos="zoom-in"
           data-aos-anchor-placement="top-center"
           data-aos-offset="-250"
         >
@@ -43,7 +43,7 @@ class Cards extends Component {
             <div
               className="card"
               data-aos="flip-right"
-              data-aos-delay="400"
+              data-aos-delay="200"
               data-aos-duration="3000"
             >
               <div className="cardIcon">
@@ -58,7 +58,7 @@ class Cards extends Component {
             <div
               className="card"
               data-aos="flip-right"
-              data-aos-delay="600"
+              data-aos-delay="200"
               data-aos-duration="3000"
             >
               <div className="cardIcon">

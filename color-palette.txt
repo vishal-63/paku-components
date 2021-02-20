@@ -1,0 +1,14 @@
+Primary: #4b4d80
+Dark: #131320
+Light: #f9f9fb
+
+Shades(from dark to light): 
+	10%-#131320, 
+	20%-#262740, 
+	30%-#393a60, 
+	40%-#4b4d81,
+	50%-#5e61a1,
+	60%-#7e80b4,
+	70%-#9fa0c6,
+	80%-#bfc0d9,
+	90%-#dfdfec

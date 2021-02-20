@@ -1,9 +1,8 @@
 .infoContainer {
   width: 100%;
-  background-color: #f9f8ff;
+  background-color: #f9f8fb;
   padding: 24px 48px;
-  position: absolute;
-  top: 720px;
+  position: relative;
 }
 
 .infoWrapper {
@@ -50,6 +49,25 @@
   opacity: 0.9;
 }
 
+.infoBtn {
+  font-size: 1rem;
+  color: #7287f2;
+  background-color: transparent;
+  padding: 8px 16px;
+  border: 1px solid #7287f2;
+  justify-self: center;
+  margin: -10px auto 30px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.infoBtn:hover {
+  color: #f9f8ff;
+  background-color: #4b4d80;
+  border-color: #4b4d80;
+  transition: all 0.3s ease-in-out;
+}
+
 @media screen and (max-width: 1500px) {
   .infoWrapper {
     width: 1100px;
@@ -83,6 +101,7 @@
 
 @media screen and (max-width: 769px) {
   .infoContainer {
+    top: -50px;
     padding: 24px 24px;
   }
 
@@ -103,5 +122,17 @@
     width: 100%;
     left: 0;
     margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+}
+
+@media screen and (max-width: 376px) {
+  .infoContainer {
+    top: 0px;
+  }
+  .infoTitle {
+    margin-top: 100px;
   }
 }

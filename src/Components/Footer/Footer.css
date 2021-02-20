@@ -1,0 +1,155 @@
+.footerContainer {
+  background-color: #131320;
+  position: relative;
+  /* top: 1940px; */
+  width: 100%;
+  overflow: hidden;
+}
+
+.footerWrap {
+  background-color: #131320;
+  padding: 48px 24px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.footerMap {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.footerLinksWrapper {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.footerLinkItems {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 16px;
+  box-sizing: border-box;
+  color: #f9f8ff;
+}
+
+.footerLinkTitle {
+  font-size: 20px;
+  margin-bottom: 16px;
+}
+
+.footerLink {
+  font-size: 16px;
+  color: #f9f8ff;
+  text-decoration: none;
+  margin-bottom: 0.5rem;
+  padding-bottom: 10px;
+  display: flex;
+}
+
+.footerLink:hover {
+  color: #7e87f2;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.footerPhoneNos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footerInput {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #f9f8ff;
+  cursor: pointer;
+  width: 200px;
+  font-size: 14px;
+}
+
+.footerInput:hover {
+  color: #7e87f2;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.footerLinkIcons {
+  font-size: 16px;
+  padding-right: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.socialMedia {
+  background-color: #131320;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.socialMediaWrap {
+  background-color: #131320;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.websiteRights {
+  color: #f9f8ff;
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footerMap {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 820px) {
+  .footerLinksContainer {
+    padding-top: 32px;
+  }
+
+  .footerWrap,
+  .footerLinksWrapper {
+    flex-direction: column-reverse;
+  }
+
+  .footerLinksWrapper {
+    align-items: center;
+  }
+
+  .socialMediaWrap {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .footerLinksWrapper {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .footerLinkItems {
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .contactIcon {
+    width: 325px;
+  }
+}

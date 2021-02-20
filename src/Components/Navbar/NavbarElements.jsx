@@ -4,17 +4,26 @@ import { Link as LinkS } from "react-scroll";
 import { FaTimes } from "react-icons/fa";
 
 export const Nav = styled.nav`
-  background: #f9f8ff;
+  background-color: ${({ scrollNav }) =>
+    scrollNav ? "#f9f9fb" : "transparent"};
   height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   font-size: 1rem;
   padding: 0 96px;
+  position: sticky;
+  top: ${({ scrollNav }) => (scrollNav ? "0" : "44px")};
+  z-index: 20;
+  transition: 0.3s all ease-in-out;
 
   @media screen and (max-width: 1100px) {
     transition: 0.8s all ease;
     padding: 0 48px;
+  }
+
+  @media screen and (max-width: 420px) {
+    top: ${({ scrollNav }) => (scrollNav ? "0" : "30px")};
   }
 `;
 
@@ -58,7 +67,7 @@ export const MobileIcon = styled.div`
     position: absolute;
     top: 0;
     right: 0;
-    transform: translate(-100%, 140%);
+    transform: translate(-100%, 50%);
     font-size: 1.8rem;
     cursor: pointer;
     color: #4b4d80;
@@ -66,7 +75,7 @@ export const MobileIcon = styled.div`
 
   @media screen and (max-width: 480px) {
     display: ${({ isOpen }) => (isOpen ? "none" : "block")};
-    transform: translate(-100%, 110%);
+    transform: translate(-100%, 50%);
   }
 `;
 
@@ -75,14 +84,14 @@ export const CloseIcon = styled(FaTimes)`
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-10%, 160%);
+  transform: translate(-10%, 30%);
   font-size: 1.8rem;
   cursor: pointer;
   color: #4b4d80;
 
   @media screen and (max-width: 480px) {
     display: ${({ isOpen }) => (isOpen ? "block" : "none")};
-    transform: translate(-10%, 110%);
+    transform: translate(-10%, 20%);
   }
 `;
 

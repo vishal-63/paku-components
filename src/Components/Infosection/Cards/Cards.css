@@ -1,9 +1,9 @@
 .cardSectionContainer {
-  background-color: #f9f8ff;
+  background-color: #f9f8fb;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 50px auto;
+  margin: 30px auto;
 }
 
 .cardSectionWrapper {
@@ -14,7 +14,7 @@
   align-items: center;
   border: 2px solid lightgray;
   margin: 0 auto;
-  padding: 24px 48px 36px;
+  padding: 36px 64px;
   border-radius: 5px;
 }
 
@@ -34,7 +34,7 @@
 .cardsWrapper {
   display: grid;
   grid-template-columns: auto auto auto;
-  grid-gap: 32px;
+  grid-gap: 48px;
   margin-top: 50px;
 }
 
@@ -46,14 +46,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.11), 0 2px 2px rgba(0, 0, 0, 0.11),
-    0 4px 4px rgba(0, 0, 0, 0.11), 0 6px 8px rgba(0, 0, 0, 0.11),
-    0 8px 16px rgba(0, 0, 0, 0.11);
-  cursor: pointer;
+  transition: all 0.3 ease;
+  box-shadow: 0 6px 20px rgba(56, 125, 255, 0.17);
+  -webkit-filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
+  filter: drop-shadow(0 6px 20px rgba(56, 125, 255, 0.017));
 }
 
 .card:hover {
   transform: scale(1.02);
+  -webkit-transform: scale(1.02);
+  cursor: pointer;
 }
 
 .cardIcon {

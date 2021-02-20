@@ -5,6 +5,8 @@ export const TopbarContainer = styled.div`
   height: 44px;
   background-color: #000;
   padding: 10px 32px;
+  ${"" /* position: sticky;
+  top: 0; */}
 
   @media screen and (max-width: 960px) {
     padding: 10px 24px;

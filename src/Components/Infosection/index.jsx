@@ -9,24 +9,16 @@ import BrandSlider from "./Slider";
 class Infosection extends Component {
   render() {
     AOS.init({
-      duration: 2000,
+      duration: 1500,
     });
     return (
       <div className="infoContainer">
         <div className="infoWrapper">
-          <h2
-            className="infoTitle"
-            data-aos="fade-up"
-            data-aos-easing="ease-in-out"
-          >
-            About Us{" "}
+          <h2 className="infoTitle" data-aos="zoom-in">
+            About Us
           </h2>
           <div className="infoContent">
-            <div
-              className="infoText"
-              data-aos="fade-right"
-              data-aos-easing="linear"
-            >
+            <div className="infoText" data-aos="zoom-in" data-aos-offset="-10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
               rutrum tristique justo vel fringilla. Duis rutrum lorem a nisl
               luctus pharetra. Aliquam ultricies ante placerat elit semper, sed
@@ -40,9 +32,10 @@ class Infosection extends Component {
               src={img5}
               alt="infoImg"
               className="infoImg"
-              data-aos="fade-right"
+              data-aos="zoom-in"
             />
           </div>
+          <div className="infoBtn">Know More</div>
         </div>
         <Cards />
         <BrandSlider />
