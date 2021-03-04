@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { FaPhoneAlt } from "react-icons/fa";
 import { HiMail } from "react-icons/hi";
-import { FaSearchLocation } from "react-icons/fa";
 import {
   TopbarContainer,
   TopbarContent,

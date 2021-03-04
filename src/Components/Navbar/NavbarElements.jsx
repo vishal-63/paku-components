@@ -1,18 +1,18 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import { FaTimes } from "react-icons/fa";
+
 export const NavbarContainer = styled.nav`
-  background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
-  height: 80px;
+  background-color: ${({ scrollNav }) =>
+    scrollNav ? "#fafaff" : "transparent"};
+  height: 70px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  font-size: 16px;
-  width: 75%;
-  margin: 0 auto;
+  font-size: 1rem;
   position: sticky;
+  top: ${({ scrollNav }) => (scrollNav ? "0" : "44px")};
   z-index: 20;
-  transition: all 0.3s ease-in-out;
+  transition: 0.3s all ease-in-out;
 
   @media screen and (max-width: 768px) {
     margin: 0 10px;
@@ -21,14 +21,19 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const NavWrapper = styled.div`
-  width: 100%;
+  width: 75%;
+  margin: 0 auto;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 10px;
+  }
 `;
 
 export const NavTitle = styled(Link)`
-  color: #241b64;
+  color: #10375d;
   justify-self: flex-start;
   cursor: pointer;
   align-items: center;
@@ -51,7 +56,8 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 50%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #4b4d80;
+    color: #10375d;
+    z-index: 10;
   }
 `;
 
@@ -60,10 +66,10 @@ export const CloseIcon = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-130%, 50%);
+  transform: translate(-135%, 30%);
   font-size: 1.8rem;
   cursor: pointer;
-  color: #4b4d80;
+  color: #10375d;
 `;
 
 export const NavMenu = styled.div`
@@ -80,11 +86,24 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #241b64;
-  padding: 0 16px;
+  color: #10375d;
+  padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
   font-size: 18px;
   margin: 0 10px;
   font-weight: 500;
+  border: 1.7px solid transparent;
+  transition: all 0.2s ease-in;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: #174f87;
+    border-color: #174f87;
+    transition: all 0.2s ease-in;
+  }
+
+  @media screen and (max-width: 540px) {
+    font-size: 12px;
+  }
 `;

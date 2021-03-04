@@ -7,17 +7,17 @@ export const TopbarContainer = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1.5px solid #040d16;
+  z-index: 20;
 `;
 
 export const TopbarContent = styled.div`
-  width: 75%;
   height: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
-  border-right: 1px solid #fff;
-  color: #241b64;
+  border-right: 1.5px solid #040d16;
+  color: #10375d;
 `;
 
 export const TopbarWrapper = styled.div`
@@ -27,8 +27,8 @@ export const TopbarWrapper = styled.div`
   font-size: 14px;
   padding: 0 20px;
   height: 100%;
-  border-left: 1px solid #fff;
-  /* border-right: 1px solid #fff; */
+  border-left: 1.5px solid #040d16;
+  /* border-right: 1px solid #000; */
 
   @media screen and (max-width: 420px) {
     font-size: 6px;

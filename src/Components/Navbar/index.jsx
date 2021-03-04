@@ -9,7 +9,6 @@ import {
   NavLogo,
   MobileIcon,
   CloseIcon,
-  Icon,
   NavMenu,
   NavLinks,
 } from "./NavbarElements";
