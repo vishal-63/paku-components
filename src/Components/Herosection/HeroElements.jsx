@@ -1,12 +1,15 @@
 import styled from "styled-components";
 
+const primaryColor = "#1d9bc9";
+const lightColor = "#e9f6fc";
+const darkColor = "#0a3443";
+
 export const HerosectionSlider = styled.section`
-  position: absolute;
-  top: 0;
+  position: relative;
+  top: -105px;
   left: 0;
   width: 100%;
   height: 100vh;
-  z-index: -1;
   overflow: hidden;
 `;
 
@@ -17,8 +20,7 @@ export const HeroSlide = styled.div`
 export const HeroImage = styled.img`
   width: 100%;
   height: 100vh;
-  opacity: 0.5;
-  z-index: -1;
+  z-index: 1;
   user-select: none;
 `;
 
@@ -31,14 +33,15 @@ export const HeroText = styled.div`
   top: -50vh;
   left: 50vw;
   transform: translate(-50%, -50%);
-  z-index: 1;
+  z-index: 999;
 `;
 
 export const HeroHeading = styled.h1`
   font-size: 48px;
   font-weight: 700;
-  color: #10375d;
+  color: #1d9bc9;
   letter-spacing: 2px;
+  z-index: 999;
 
   @media screen and (max-width: 540px) {
     font-size: 30px;
@@ -49,8 +52,9 @@ export const HeroSubtitle = styled.p`
   margin-top: 20px;
   font-size: 24px;
   font-weight: 500;
-  color: #040d16;
+  color: #e9f6fc;
   font-family: "Titillium Web", sans-serif;
+  z-index: 999;
 
   @media screen and (max-width: 540px) {
     font-size: 16px;
@@ -67,7 +71,7 @@ export const HeroDotsWrapper = styled.div`
   position: absolute;
   top: 50%;
   right: 20px;
-  z-index: 10;
+  z-index: 20;
   font-size: 10px;
 
   @media screen and (max-width: 768px) {
@@ -91,12 +95,12 @@ export const HeroDot = styled.div`
   cursor: pointer;
 
   &:hover {
-    border: 2px solid #05647a;
+    border: 2px solid ${darkColor};
   }
 `;
 
 export const HeroLine = styled.div`
-  background-color: #040d16;
+  background-color: ${darkColor};
   height: 100px;
   width: 1.5px;
   margin: 10px 0;
@@ -107,7 +111,7 @@ export const HeroLine = styled.div`
 `;
 
 export const HeroCurrentSlideNo = styled.div`
-  color: #10375d;
+  color: ${primaryColor};
   font-weight: 500;
   font-size: 26px;
   padding-right: 5px;
@@ -123,7 +127,7 @@ export const HeroSlideNo = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  color: #040d16;
+  color: ${lightColor};
 
   @media screen and (max-width: 768px) {
     display: none;

@@ -4,6 +4,7 @@ import Navbar from "../Components/Navbar";
 import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
 import { SliderData } from "../Components/Herosection/SliderData";
+import Infosection from "../Components/Infosection";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -18,6 +19,7 @@ const Home = () => {
       <Navbar isOpen={isOpen} toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Herosection slides={SliderData} />
+      <Infosection />
     </>
   );
 };

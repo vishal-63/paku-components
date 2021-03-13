@@ -10,12 +10,11 @@ export const NavbarContainer = styled.nav`
   align-items: center;
   font-size: 1rem;
   position: sticky;
-  top: ${({ scrollNav }) => (scrollNav ? "0" : "44px")};
+  top: ${({ scrollNav }) => (scrollNav ? "0" : "")};
   z-index: 20;
   transition: 0.3s all ease-in-out;
 
   @media screen and (max-width: 768px) {
-    margin: 0 10px;
     width: 100%;
   }
 `;
@@ -66,7 +65,7 @@ export const CloseIcon = styled.div`
   position: absolute;
   top: 0;
   right: 0;
-  transform: translate(-135%, 30%);
+  transform: translate(-100%, 50%);
   font-size: 1.8rem;
   cursor: pointer;
   color: #10375d;
@@ -86,7 +85,7 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #10375d;
+  color: #1d9bc9;
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;

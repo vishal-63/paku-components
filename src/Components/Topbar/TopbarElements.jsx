@@ -1,23 +1,23 @@
 import styled from "styled-components";
 
-export const TopbarContainer = styled.section`
+export const TopbarContainer = styled.div`
   width: 100%;
   height: 35px;
   background: transparent;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-bottom: 1.5px solid #040d16;
-  z-index: 20;
 `;
 
 export const TopbarContent = styled.div`
   height: 100%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-right: 1.5px solid #040d16;
-  color: #10375d;
+  color: #1d9bc9;
+  border-bottom: 1.5px solid #0c445a;
+  z-index: 20;
 `;
 
 export const TopbarWrapper = styled.div`
@@ -27,8 +27,13 @@ export const TopbarWrapper = styled.div`
   font-size: 14px;
   padding: 0 20px;
   height: 100%;
-  border-left: 1.5px solid #040d16;
-  /* border-right: 1px solid #000; */
+  border-left: 1.5px solid #0c445a;
+  border-right: 1.5px solid #0c445a;
+  z-index: 20;
+
+  &:nth-child(1) {
+    border-right: none;
+  }
 
   @media screen and (max-width: 420px) {
     font-size: 6px;
@@ -40,11 +45,13 @@ export const TopbarIcons = styled.span`
   padding-top: 4px;
   padding-right: 0px;
   justify-self: flex-start;
+  z-index: 20;
 `;
 
 export const TopbarText = styled.span`
   font-size: 14px;
   padding-left: 10px;
+  z-index: 20;
 
   @media screen and (max-width: 768px) {
     font-size: 6px;
