@@ -74,7 +74,7 @@ export const HeroDotsWrapper = styled.div`
   z-index: 20;
   font-size: 10px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     top: 95%;
     left: 10%;
     flex-direction: row;
@@ -105,7 +105,7 @@ export const HeroLine = styled.div`
   width: 1.5px;
   margin: 10px 0;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -116,7 +116,7 @@ export const HeroCurrentSlideNo = styled.div`
   font-size: 26px;
   padding-right: 5px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;
@@ -129,7 +129,7 @@ export const HeroSlideNo = styled.div`
   align-items: flex-end;
   color: ${lightColor};
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     display: none;
   }
 `;

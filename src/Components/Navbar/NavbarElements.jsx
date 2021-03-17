@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
   background-color: ${({ scrollNav }) =>
-    scrollNav ? "#fafaff" : "transparent"};
+    scrollNav ? "#fbfcfe" : "transparent"};
   height: 70px;
   display: flex;
   justify-content: flex-start;
@@ -89,10 +89,10 @@ export const NavLinks = styled(Link)`
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 1rem;
   margin: 0 10px;
   font-weight: 500;
-  border: 1.7px solid transparent;
+  border: 1px solid transparent;
   transition: all 0.2s ease-in;
   letter-spacing: 1px;
 

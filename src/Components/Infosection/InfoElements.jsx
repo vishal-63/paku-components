@@ -1,22 +1,31 @@
 import styled from "styled-components";
 import arrow from "../../Images/arrow.svg";
-import btnBg from "../../Images/btn-bg.jpg";
 
 export const InfoContainer = styled.section`
   position: relative;
-  top: -50px;
+  top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fbfcfe;
 `;
 
 export const InfoWrapper = styled.div`
   position: relative;
   width: 100%;
-  height: 800px;
-  margin: 0 auto 0;
+  margin: 3rem auto;
   padding: 36px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 900px) {
+    height: 100%;
+    padding: 10px 20px;
+    margin-top: 30px;
+  }
 `;
 
 export const InfoTitle = styled.div`
@@ -24,41 +33,44 @@ export const InfoTitle = styled.div`
 `;
 
 export const InfoHeadingShadow = styled.h1`
-  font-size: 60px;
+  font-size: 45px;
   letter-spacing: 3px;
   opacity: 0.4;
-  background: -webkit-linear-gradient(#040d16, #ccc 75%);
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.2);
+  /* background: -webkit-linear-gradient(#040d16, #ccc 75%); */
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
 
   @media screen and (max-width: 540px) {
-    font-size: 40px;
+    font-size: 32px;
   }
 `;
 
 export const InfoHeading = styled.h1`
-  font-size: 48px;
+  font-size: 36px;
+  text-transform: uppercase;
   letter-spacing: 3px;
   color: #10375d;
   text-align: center;
   position: relative;
-  top: -45px;
+  top: -35px;
 
   @media screen and (max-width: 540px) {
-    font-size: 32px;
-    top: -32.5px;
+    font-size: 28px;
+    top: -24px;
   }
 `;
 
 export const InfoContent = styled.div`
-  margin: 0 auto;
+  margin: 2rem auto 0;
   display: flex;
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 900px) {
     flex-direction: column;
   }
 `;
@@ -93,12 +105,9 @@ export const InfoImg = styled.img`
   height: 300px;
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
 
-  @media screen and (max-width: 768px) {
-    margin: 20px 0 0 0;
-  }
-
-  @media screen and (max-width: 540px) {
-    width: 300px;
+  @media screen and (max-width: 900px) {
+    margin: 30px 0 0 0;
+    width: 100%;
   }
 `;
 

@@ -11,7 +11,7 @@ import {
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
-      <Topbar />
+      {/* <Topbar /> */}
       <Navbar isOpen={isOpen} toggle={toggle} />
       <SidebarWrapper>
         <SidebarMenu>

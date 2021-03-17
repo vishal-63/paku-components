@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import img from "../../Images/img-5.jpg";
+import Brands from "./Brands";
 import {
   InfoContainer,
   InfoWrapper,
@@ -15,6 +16,8 @@ import {
   InfoBtnSpan1,
   InfoBtnSpan2,
 } from "./InfoElements";
+import Products from "./Products";
+import UspCards from "./USP";
 
 class Infosection extends Component {
   state = {};
@@ -48,6 +51,12 @@ class Infosection extends Component {
             <InfoImg src={img} alt="image" />
           </InfoContent>
         </InfoWrapper>
+
+        <Products />
+
+        <UspCards />
+
+        <Brands />
       </InfoContainer>
     );
   }
