@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import img from "../../Images/img-5.jpg";
-import Brands from "./Brands";
 import {
   InfoContainer,
   InfoWrapper,
@@ -18,19 +19,24 @@ import {
 } from "./InfoElements";
 import Products from "./Products";
 import UspCards from "./USP";
+import Brands from "./Brands";
 
 class Infosection extends Component {
   state = {};
   render() {
+    AOS.init({
+      duration: 1500,
+    });
+
     return (
       <InfoContainer>
         <InfoWrapper>
           <InfoTitle>
-            <InfoHeadingShadow>ABOUT US</InfoHeadingShadow>
-            <InfoHeading>ABOUT US</InfoHeading>
+            <InfoHeadingShadow data-aos="zoom-in">ABOUT US</InfoHeadingShadow>
+            <InfoHeading data-aos="zoom-in">ABOUT US</InfoHeading>
           </InfoTitle>
           <InfoContent>
-            <InfoText>
+            <InfoText data-aos="slide-right">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               natus dolorem veritatis asperiores praesentium cumque doloremque
               officia impedit qui ipsum inventore possimus, alias tempore ipsam.
@@ -48,7 +54,12 @@ class Infosection extends Component {
                 <InfoBtnSpan2>Know More</InfoBtnSpan2>
               </InfoBtn>
             </InfoText>
-            <InfoImg src={img} alt="image" />
+            <InfoImg
+              src={img}
+              alt="image"
+              data-aos="fade-left"
+              data-aos-delay="200"
+            />
           </InfoContent>
         </InfoWrapper>
 

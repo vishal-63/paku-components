@@ -94,7 +94,7 @@ export const NavLinks = styled(Link)`
   font-weight: 500;
   border: 1px solid transparent;
   transition: all 0.2s ease-in;
-  letter-spacing: 1px;
+  text-transform: uppercase;
 
   &:hover {
     color: #174f87;

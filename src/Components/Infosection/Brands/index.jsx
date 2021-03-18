@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import { InfoHeading, InfoHeadingShadow } from "../InfoElements";
 import {
   BrandsContainer,
@@ -15,18 +17,22 @@ import img4 from "../../../Images/volkswagen.png";
 class Brands extends Component {
   state = {};
   render() {
+    AOS.init({
+      duration: 1500,
+    });
+
     return (
       <BrandsContainer>
-        <InfoHeadingShadow>Our Partners</InfoHeadingShadow>
-        <InfoHeading>Our Partners</InfoHeading>
+        <InfoHeadingShadow data-aos="zoom-in">Our Partners</InfoHeadingShadow>
+        <InfoHeading data-aos="zoom-in">Our Partners</InfoHeading>
 
         <BrandsWrapper>
-          <BrandsText>
+          <BrandsText data-aos="zoom-in">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ducimus
             odio unde amet, dolore ipsam.
           </BrandsText>
 
-          <BrandsImgWrapper>
+          <BrandsImgWrapper data-aos="zoom-in">
             <BrandsImg src={img1} alt="honda" />
             <BrandsImg src={img2} alt="hyundai" />
             <BrandsImg src={img3} alt="toyota" />

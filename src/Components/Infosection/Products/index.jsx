@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import {
   ProductCardsContainer,
   ProductCardsWrapper,
@@ -18,13 +20,17 @@ import { InfoHeading, InfoHeadingShadow } from "../InfoElements";
 class Products extends Component {
   state = {};
   render() {
+    AOS.init({
+      duration: 1500,
+    });
+
     return (
       <ProductCardsContainer>
-        <InfoHeadingShadow>Products</InfoHeadingShadow>
-        <InfoHeading>Products</InfoHeading>
+        <InfoHeadingShadow data-aos="zoom-in">Products</InfoHeadingShadow>
+        <InfoHeading data-aos="zoom-in">Products</InfoHeading>
 
         <ProductCardsWrapper>
-          <ProductCard>
+          <ProductCard data-aos="flip-right">
             <ProductCardTitle>Radiator</ProductCardTitle>
             <ProductCardImgWrapper>
               <ProductCardImg src={img1} alt="radiator"></ProductCardImg>
@@ -33,7 +39,7 @@ class Products extends Component {
             <ProductCardBottomLine />
           </ProductCard>
 
-          <ProductCard>
+          <ProductCard data-aos="flip-right" data-aos-delay="100">
             <ProductCardTitle>Core</ProductCardTitle>
             <ProductCardImgWrapper>
               <ProductCardImg src={img2} alt="core"></ProductCardImg>
@@ -42,7 +48,7 @@ class Products extends Component {
             <ProductCardBottomLine />
           </ProductCard>
 
-          <ProductCard>
+          <ProductCard data-aos="flip-right" data-aos-delay="200">
             <ProductCardTitle>Condenser</ProductCardTitle>
             <ProductCardImgWrapper>
               <ProductCardImg src={img3} alt="condenser"></ProductCardImg>
@@ -51,7 +57,7 @@ class Products extends Component {
             <ProductCardBottomLine />
           </ProductCard>
 
-          <ProductCard>
+          <ProductCard data-aos="flip-right" data-aos-delay="300">
             <ProductCardTitle>Intercooler</ProductCardTitle>
             <ProductCardImgWrapper>
               <ProductCardImg src={img4} alt="intercooler"></ProductCardImg>
