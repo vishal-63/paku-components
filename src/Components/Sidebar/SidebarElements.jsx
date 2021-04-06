@@ -6,10 +6,11 @@ export const SidebarContainer = styled.aside`
   z-index: 999;
   width: 100%;
   display: grid;
-  background: #fafaff;
+  background: #fff;
   align-items: center;
   top: 0;
   left: 0;
+  transition: 0.5s all ease-in-out;
   opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
 `;
@@ -20,7 +21,7 @@ export const SidebarWrapper = styled.div`
 
 export const SidebarLink = styled(Link)`
   margin-left: 24px;
-  color: #10375d;
+  color: #01194f;
   display: flex;
   justify-content: flex-start;
   align-items: center;

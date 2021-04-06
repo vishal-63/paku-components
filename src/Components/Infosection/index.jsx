@@ -36,7 +36,7 @@ class Infosection extends Component {
             <InfoHeading data-aos="zoom-in">ABOUT US</InfoHeading>
           </InfoTitle>
           <InfoContent>
-            <InfoText data-aos="slide-right">
+            <InfoText data-aos="zoom-in">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               natus dolorem veritatis asperiores praesentium cumque doloremque
               officia impedit qui ipsum inventore possimus, alias tempore ipsam.
@@ -57,7 +57,7 @@ class Infosection extends Component {
             <InfoImg
               src={img}
               alt="image"
-              data-aos="fade-left"
+              data-aos="zoom-in"
               data-aos-delay="200"
             />
           </InfoContent>

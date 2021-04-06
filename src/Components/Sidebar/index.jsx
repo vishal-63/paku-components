@@ -1,6 +1,5 @@
 import React from "react";
 import Navbar from "../Navbar";
-import Topbar from "../Topbar";
 import {
   SidebarContainer,
   SidebarWrapper,
@@ -9,6 +8,8 @@ import {
 } from "./SidebarElements.jsx";
 
 const Sidebar = ({ isOpen, toggle }) => {
+  
+
   return (
     <SidebarContainer isOpen={isOpen}>
       {/* <Topbar /> */}

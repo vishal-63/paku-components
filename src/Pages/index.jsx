@@ -6,6 +6,7 @@ import Topbar from "../Components/Topbar";
 import { SliderData } from "../Components/Herosection/SliderData";
 import Infosection from "../Components/Infosection";
 import ContactSection from "../Components/Contact Form";
+import Footer from "../Components/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -22,6 +23,7 @@ const Home = () => {
       <Herosection slides={SliderData} />
       <Infosection />
       <ContactSection />
+      <Footer />
     </>
   );
 };

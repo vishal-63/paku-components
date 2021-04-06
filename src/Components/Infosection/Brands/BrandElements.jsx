@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const BrandsContainer = styled.section`
   width: 100%;
-  margin: 3rem auto;
+  margin: 3rem auto 2rem;
   display: flex;
   flex-direction: column;
 `;
@@ -22,6 +22,11 @@ export const BrandsText = styled.p`
   letter-spacing: 0.5px;
   color: #000;
   max-width: 75%;
+  text-align: justify;
+
+  @media (max-width: 540px) {
+    padding-top: 1.5rem;
+  }
 `;
 
 export const BrandsImgWrapper = styled.div`
@@ -36,7 +41,7 @@ export const BrandsImgWrapper = styled.div`
   }
 
   @media (max-width: 540px) {
-    grid-template-columns: auto;
+    grid-template-columns: auto auto;
   }
 `;
 
@@ -59,6 +64,7 @@ export const BrandsImg = styled.img`
   }
 
   @media (max-width: 540px) {
-    max-width: 200px;
+    width: 100px;
+    height: 100px;
   }
 `;

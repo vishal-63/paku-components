@@ -2,12 +2,13 @@ import styled from "styled-components";
 
 export const ContactSectionContainer = styled.section`
   width: 100%;
-  margin: 3rem auto;
+  margin: 0 auto 3rem;
+  padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #fbfcfe;
+  background-color: #fff;
 `;
 
 export const ContactSectionTitle = styled.h1`
@@ -19,7 +20,8 @@ export const ContactSectionTitle = styled.h1`
 export const ContactSectionWrapper = styled.div`
   display: flex;
   overflow: hidden;
-  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.2);
+  background-color: #fff;
+  box-shadow: 12px 16px 15px rgba(0, 0, 0, 0.2);
   margin-top: 2rem;
 
   @media (max-width: 540px) {
@@ -52,6 +54,10 @@ export const ContactFormTitle = styled.h2`
   font-size: 1.5rem;
   padding: 1rem 0 0 2rem;
   text-transform: uppercase;
+
+  @media (max-width: 540px) {
+    padding: 1rem 0 0 1rem;
+  }
 `;
 
 export const ContactForm = styled.form`
@@ -61,13 +67,18 @@ export const ContactForm = styled.form`
   justify-content: center;
   align-items: flex-start;
   padding: 1rem 2rem;
+
+  @media (max-width: 540px) {
+    padding: 1rem;
+  }
 `;
 
 export const NameEmailWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
-
+  border-color: #01194f;
+  
   & input {
     width: 48%;
   }
@@ -99,13 +110,21 @@ export const ContactFormMessage = styled.textarea`
 
 export const ContactFormButton = styled.input`
   color: #fff;
-  background-color: #1d9bc9;
+  background-color: #01194f;
   border-radius: 50px;
-  border: none;
+  border: 1px solid #01194f;
   font-size: 1.2rem;
   padding: 0.5rem 2rem;
   text-align: center;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    color: #01194f;
+    background-color: transparent;
+    border: 1px solid #01194f;
+    transition: all 0.3s ease-in-out;
+  }
 `;
 
 export const MapWrapper = styled.div`

@@ -1,6 +1,4 @@
-import React, { Component } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import React from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
 import {
   ContactSectionContainer,
@@ -34,10 +32,6 @@ class ContactSection extends React.Component {
   }
 
   render() {
-    AOS.init({
-      duration: 1500,
-    });
-
     return (
       <ContactSectionContainer>
         <InfoHeadingShadow data-aos="zoom-in">Contact Us</InfoHeadingShadow>
@@ -96,7 +90,7 @@ class ContactSection extends React.Component {
               className="map"
               google={this.props.google}
               zoom={15}
-              initialCenter={{ lat: 12.93213, lng: 77.55292 }}
+              initialCenter={{ lat: 12.9396425, lng: 77.5572237 }}
             >
               <Marker />
             </Map>

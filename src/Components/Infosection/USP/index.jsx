@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { InfoHeading, InfoHeadingShadow } from "../InfoElements";
 import {
   UspContainer,
@@ -17,17 +15,13 @@ import { BsStar } from "react-icons/bs";
 class UspCards extends Component {
   state = {};
   render() {
-    AOS.init({
-      duration: 1500,
-    });
-
     return (
       <UspContainer>
         <InfoHeadingShadow data-aos="zoom-in">Why Choose Us?</InfoHeadingShadow>
         <InfoHeading data-aos="zoom-in">Why Choose Us?</InfoHeading>
 
         <UspCardsWrapper>
-          <UspCard data-aos="slide-right">
+          <UspCard data-aos="flip-right">
             <UspCardIcon>
               <VscFolderOpened />
             </UspCardIcon>
@@ -38,7 +32,7 @@ class UspCards extends Component {
             </UspCardText>
           </UspCard>
 
-          <UspCard data-aos="slide-right">
+          <UspCard data-aos="flip-right">
             <UspCardIcon>
               <BiRupee />
             </UspCardIcon>
@@ -49,7 +43,7 @@ class UspCards extends Component {
             </UspCardText>
           </UspCard>
 
-          <UspCard data-aos="slide-right">
+          <UspCard data-aos="flip-right">
             <UspCardIcon>
               <BsStar />
             </UspCardIcon>

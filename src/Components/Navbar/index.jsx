@@ -29,7 +29,7 @@ const Navbar = ({ isOpen, toggle }) => {
   }, []);
 
   return (
-    <NavbarContainer scrollNav={scrollNav}>
+    <NavbarContainer scrollNav={scrollNav} isOpen={isOpen}>
       <NavWrapper>
         <NavTitle to="/">
           <NavLogo src={logo} alt="logo" />
@@ -41,9 +41,9 @@ const Navbar = ({ isOpen, toggle }) => {
           <FaTimes />
         </CloseIcon>
         <NavMenu>
-          <NavLinks>About</NavLinks>
-          <NavLinks>Products</NavLinks>
-          <NavLinks>Contact</NavLinks>
+          <NavLinks scrollNav={scrollNav}>About</NavLinks>
+          <NavLinks scrollNav={scrollNav}>Products</NavLinks>
+          <NavLinks scrollNav={scrollNav}>Contact</NavLinks>
         </NavMenu>
       </NavWrapper>
     </NavbarContainer>

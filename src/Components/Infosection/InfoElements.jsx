@@ -8,7 +8,7 @@ export const InfoContainer = styled.section`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fbfcfe;
+  background-color: #fff;
 `;
 
 export const InfoWrapper = styled.div`
@@ -53,7 +53,7 @@ export const InfoHeading = styled.h1`
   font-size: 36px;
   text-transform: uppercase;
   letter-spacing: 3px;
-  color: #10375d;
+  color: #01194f;
   text-align: center;
   position: relative;
   top: -35px;
@@ -117,12 +117,13 @@ export const InfoBtn = styled.div`
   width: 150px;
   height: 42.5px;
   font-size: 18px;
-  color: #020509;
+  color: #01194f;
   position: relative;
   background: transparent;
   box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
   overflow: hidden;
   transition: all 0.5s ease-in-out;
+  border: none;
 
   &:hover {
     cursor: pointer;
@@ -147,7 +148,7 @@ export const InfoBtn = styled.div`
     height: 100%;
     position: absolute;
     top: 0;
-    background-color: #d3e5f8;
+    background-color: #caf0f8;
     transition: width 0.5s ease-in-out;
     transition-delay: 0.5s;
   }
@@ -182,5 +183,5 @@ export const InfoBtnSpan2 = styled.span`
   transition: 0.5s;
   transition-delay: 0.5s;
   transform: scale(3);
-  color: #10375d;
+  color: #01194f;
 `;

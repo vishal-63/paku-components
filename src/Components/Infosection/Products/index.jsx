@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import {
   ProductCardsContainer,
   ProductCardsWrapper,
@@ -20,10 +18,6 @@ import { InfoHeading, InfoHeadingShadow } from "../InfoElements";
 class Products extends Component {
   state = {};
   render() {
-    AOS.init({
-      duration: 1500,
-    });
-
     return (
       <ProductCardsContainer>
         <InfoHeadingShadow data-aos="zoom-in">Products</InfoHeadingShadow>

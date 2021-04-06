@@ -39,7 +39,7 @@ export const HeroText = styled.div`
 export const HeroHeading = styled.h1`
   font-size: 48px;
   font-weight: 700;
-  color: #1d9bc9;
+  color: #00b4d8;
   letter-spacing: 2px;
   z-index: 999;
 
@@ -71,7 +71,7 @@ export const HeroDotsWrapper = styled.div`
   position: absolute;
   top: 50%;
   right: 20px;
-  z-index: 20;
+  z-index: 5;
   font-size: 10px;
 
   @media screen and (max-width: 900px) {
@@ -95,12 +95,12 @@ export const HeroDot = styled.div`
   cursor: pointer;
 
   &:hover {
-    border: 2px solid ${darkColor};
+    border: 2px solid #00b4d8;
   }
 `;
 
 export const HeroLine = styled.div`
-  background-color: ${darkColor};
+  background-color: #01194f;
   height: 100px;
   width: 1.5px;
   margin: 10px 0;
@@ -111,7 +111,7 @@ export const HeroLine = styled.div`
 `;
 
 export const HeroCurrentSlideNo = styled.div`
-  color: ${primaryColor};
+  color: #00b4d8;
   font-weight: 500;
   font-size: 26px;
   padding-right: 5px;

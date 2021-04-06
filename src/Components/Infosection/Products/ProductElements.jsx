@@ -103,5 +103,5 @@ export const ProductCardBottomLine = styled.span`
   display: inline-block;
   position: relative;
   left: -250px;
-  background-color: #1d9bc9;
+  background-color: #0077b6;
 `;

@@ -72,12 +72,12 @@ export const UspCard = styled.div`
 `;
 
 export const UspCardIcon = styled.div`
-  color: ${primaryColor};
+  color: #00b4d8;
   font-size: 1.8rem;
   position: absolute;
   margin-top: -48px;
   margin-left: 210px;
-  background-color: #fbfcfe;
+  background-color: #fff;
   padding: 0.5rem;
   text-align: center;
 
@@ -92,6 +92,10 @@ export const UspCardIcon = styled.div`
 
   @media (max-width: 540px) {
     margin-left: 180px;
+  }
+
+  @media (max-width: 300px) {
+    margin-left: 100px;
   }
 `;
 

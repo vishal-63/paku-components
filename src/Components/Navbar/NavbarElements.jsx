@@ -2,8 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
-  background-color: ${({ scrollNav }) =>
-    scrollNav ? "#fbfcfe" : "transparent"};
+  background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
+  box-shadow: ${({ isOpen }) => (isOpen ? "0 0 0 rgb(255,255,255)" : "0 5px 20px rgba(0,0,0,0.2)")};
   height: 70px;
   display: flex;
   justify-content: flex-start;
@@ -12,7 +12,6 @@ export const NavbarContainer = styled.nav`
   position: sticky;
   top: ${({ scrollNav }) => (scrollNav ? "0" : "")};
   z-index: 20;
-  transition: 0.3s all ease-in-out;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -20,8 +19,8 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const NavWrapper = styled.div`
-  width: 75%;
-  margin: 0 auto;
+  width: 100%;
+  margin: 0 2rem;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -46,6 +45,7 @@ export const NavLogo = styled.img`
 
 export const MobileIcon = styled.div`
   display: none;
+  transition: 0.3s all ease-in-out;
 
   @media screen and (max-width: 768px) {
     display: ${({ isOpen }) => (isOpen ? "none" : "block")};
@@ -55,8 +55,9 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 50%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #10375d;
+    color: #01194f;
     z-index: 10;
+    transition: 0.3s all ease-in-out;
   }
 `;
 
@@ -68,7 +69,8 @@ export const CloseIcon = styled.div`
   transform: translate(-100%, 50%);
   font-size: 1.8rem;
   cursor: pointer;
-  color: #10375d;
+  color: #01194f;
+  transition: 0.3s all ease-in-out;
 `;
 
 export const NavMenu = styled.div`
@@ -85,7 +87,7 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLinks = styled(Link)`
-  color: #1d9bc9;
+  color: ${({ scrollNav }) => (scrollNav ? "#01194f" : "#00b4d8")};
   padding: 10px 20px;
   cursor: pointer;
   text-decoration: none;
@@ -97,8 +99,7 @@ export const NavLinks = styled(Link)`
   text-transform: uppercase;
 
   &:hover {
-    color: #174f87;
-    border-color: #174f87;
+    border-color: ${({ scrollNav }) => (scrollNav ? "#01194f" : "#00b4d8")};
     transition: all 0.2s ease-in;
   }
 

@@ -15,8 +15,8 @@ export const TopbarContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #1d9bc9;
-  border-bottom: 1.5px solid #0c445a;
+  color: #00b4d8;
+  border-bottom: 1.5px solid #0096c7;
   z-index: 20;
 `;
 
@@ -27,8 +27,8 @@ export const TopbarWrapper = styled.div`
   font-size: 14px;
   padding: 0 20px;
   height: 100%;
-  border-left: 1.5px solid #0c445a;
-  border-right: 1.5px solid #0c445a;
+  border-left: 1.5px solid #0096c7;
+  border-right: 1.5px solid #0096c7;
   z-index: 20;
 
   &:nth-child(1) {
