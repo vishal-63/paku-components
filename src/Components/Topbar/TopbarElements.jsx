@@ -13,7 +13,7 @@ export const TopbarContent = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   color: #00b4d8;
   border-bottom: 1.5px solid #0096c7;
