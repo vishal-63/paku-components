@@ -17,7 +17,7 @@ const Navbar = ({ isOpen, toggle }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY >= 35) {
       setScrollNav(true);
     } else {
       setScrollNav(false);
@@ -31,9 +31,7 @@ const Navbar = ({ isOpen, toggle }) => {
   return (
     <NavbarContainer scrollNav={scrollNav} isOpen={isOpen}>
       <NavWrapper>
-        <NavTitle to="/">
-          <NavLogo src={logo} alt="logo" />
-        </NavTitle>
+        <NavTitle to="/">PAKU</NavTitle>
         <MobileIcon onClick={toggle} isOpen={isOpen}>
           <GiHamburgerMenu />
         </MobileIcon>
@@ -41,9 +39,15 @@ const Navbar = ({ isOpen, toggle }) => {
           <FaTimes />
         </CloseIcon>
         <NavMenu>
-          <NavLinks scrollNav={scrollNav}>About</NavLinks>
-          <NavLinks scrollNav={scrollNav}>Products</NavLinks>
-          <NavLinks scrollNav={scrollNav}>Contact</NavLinks>
+          <NavLinks scrollNav={scrollNav} to="/">
+            About
+          </NavLinks>
+          <NavLinks scrollNav={scrollNav} to="/">
+            Products
+          </NavLinks>
+          <NavLinks scrollNav={scrollNav} to="/">
+            Contact
+          </NavLinks>
         </NavMenu>
       </NavWrapper>
     </NavbarContainer>

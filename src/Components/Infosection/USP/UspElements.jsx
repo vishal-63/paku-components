@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-const primaryColor = "#1d9bc9";
-const lightColor = "#e9f6fc";
-const darkColor = "#0a3443";
-
 export const UspContainer = styled.div`
   width: 100%;
   display: flex;
@@ -100,7 +96,7 @@ export const UspCardIcon = styled.div`
 `;
 
 export const UspCardTitle = styled.h3`
-  color: ${darkColor};
+  color: #01194f;
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 500;

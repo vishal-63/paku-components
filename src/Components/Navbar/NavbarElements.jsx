@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
   background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
-  box-shadow: ${({ isOpen }) => (isOpen ? "0 0 0 rgb(255,255,255)" : "0 5px 20px rgba(0,0,0,0.2)")};
+  box-shadow: ${({ isOpen }) =>
+    isOpen ? "0 0 0 rgb(255,255,255)" : "0 5px 20px rgba(0,0,0,0.2)"};
   height: 70px;
   display: flex;
   justify-content: flex-start;
@@ -12,6 +13,7 @@ export const NavbarContainer = styled.nav`
   position: sticky;
   top: ${({ scrollNav }) => (scrollNav ? "0" : "")};
   z-index: 20;
+  transition: all 0.2s ease;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -30,12 +32,15 @@ export const NavWrapper = styled.div`
   }
 `;
 
-export const NavTitle = styled(Link)`
-  color: #10375d;
+export const NavTitle = styled.div`
+  color: #00b4d8;
+  font-size: 2rem;
+  font-weight: 600;
   justify-self: flex-start;
   cursor: pointer;
   align-items: center;
   text-decoration: none;
+  transition: all 0.2s ease;
 `;
 
 export const NavLogo = styled.img`
@@ -57,7 +62,7 @@ export const MobileIcon = styled.div`
     cursor: pointer;
     color: #01194f;
     z-index: 10;
-    transition: 0.3s all ease-in-out;
+    transition: all 0.2s ease;
   }
 `;
 
@@ -70,7 +75,7 @@ export const CloseIcon = styled.div`
   font-size: 1.8rem;
   cursor: pointer;
   color: #01194f;
-  transition: 0.3s all ease-in-out;
+  transition: all 0.2s ease;
 `;
 
 export const NavMenu = styled.div`
@@ -95,7 +100,7 @@ export const NavLinks = styled(Link)`
   margin: 0 10px;
   font-weight: 500;
   border: 1px solid transparent;
-  transition: all 0.2s ease-in;
+  transition: all 0.2s ease;
   text-transform: uppercase;
 
   &:hover {

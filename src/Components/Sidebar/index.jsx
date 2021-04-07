@@ -8,17 +8,14 @@ import {
 } from "./SidebarElements.jsx";
 
 const Sidebar = ({ isOpen, toggle }) => {
-  
-
   return (
     <SidebarContainer isOpen={isOpen}>
-      {/* <Topbar /> */}
       <Navbar isOpen={isOpen} toggle={toggle} />
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink>About</SidebarLink>
-          <SidebarLink>Products</SidebarLink>
-          <SidebarLink>Contact</SidebarLink>
+          <SidebarLink to="/">About</SidebarLink>
+          <SidebarLink to="/">Products</SidebarLink>
+          <SidebarLink to="/">Contact</SidebarLink>
         </SidebarMenu>
       </SidebarWrapper>
     </SidebarContainer>

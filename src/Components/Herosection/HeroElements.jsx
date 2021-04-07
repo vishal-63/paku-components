@@ -1,9 +1,5 @@
 import styled from "styled-components";
 
-const primaryColor = "#1d9bc9";
-const lightColor = "#e9f6fc";
-const darkColor = "#0a3443";
-
 export const HerosectionSlider = styled.section`
   position: relative;
   top: -105px;
@@ -127,7 +123,7 @@ export const HeroSlideNo = styled.div`
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  color: ${lightColor};
+  color: #e9f6fc;
 
   @media screen and (max-width: 900px) {
     display: none;
