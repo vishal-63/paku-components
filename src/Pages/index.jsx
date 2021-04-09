@@ -24,7 +24,7 @@ const Home = () => {
   };
 
   const changeNav = () => {
-    if (window.scrollY <= 690) setScrollNav(true);
+    if (window.scrollY >= 690) setScrollNav(true);
     else setScrollNav(false);
   };
 

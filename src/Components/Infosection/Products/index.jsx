@@ -13,7 +13,7 @@ import img1 from "../../../Images/radiator.jpg";
 import img2 from "../../../Images/core.jpg";
 import img3 from "../../../Images/condenser.png";
 import img4 from "../../../Images/intercooler.jpg";
-import { InfoHeading } from "../InfoElements";
+import { InfoHeading, InfoSubtitle } from "../InfoElements";
 
 class Products extends Component {
   state = {};
@@ -21,6 +21,7 @@ class Products extends Component {
     return (
       <ProductCardsContainer>
         <InfoHeading>Products</InfoHeading>
+        <InfoSubtitle>The widest range of products you will find.</InfoSubtitle>
 
         <ProductCardsWrapper>
           <ProductCard data-aos="flip-right">

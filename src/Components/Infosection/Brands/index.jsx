@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { InfoHeading } from "../InfoElements";
+import { InfoHeading, InfoSubtitle } from "../InfoElements";
 import {
   BrandsContainer,
   BrandsWrapper,
@@ -18,13 +18,12 @@ class Brands extends Component {
     return (
       <BrandsContainer>
         <InfoHeading>Our Partners</InfoHeading>
+        <InfoSubtitle>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
+          quasi!
+        </InfoSubtitle>
 
         <BrandsWrapper>
-          <BrandsText data-aos="zoom-in">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel ducimus
-            odio unde amet, dolore ipsam.
-          </BrandsText>
-
           <BrandsImgWrapper data-aos="zoom-in">
             <BrandsImg src={img1} alt="honda" />
             <BrandsImg src={img2} alt="hyundai" />

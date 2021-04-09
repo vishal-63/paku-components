@@ -13,17 +13,17 @@ export const InfoContainer = styled.section`
 
 export const InfoWrapper = styled.div`
   position: relative;
-  width: 100%;
+  max-width: 1200px;
   margin: 3rem auto;
   padding: 36px 48px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 
   @media screen and (max-width: 900px) {
     height: 100%;
-    padding: 10px 20px;
+    padding: 1rem 2rem;
     margin-top: 30px;
   }
 `;
@@ -33,18 +33,24 @@ export const InfoTitle = styled.div`
 `;
 
 export const InfoHeading = styled.h1`
-  font-size: 36px;
+  font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #01194f;
   text-align: center;
   position: relative;
-  top: -35px;
 
   @media screen and (max-width: 540px) {
     font-size: 28px;
-    top: -24px;
   }
+`;
+
+export const InfoSubtitle = styled.p`
+  font-family: "Titillium Web", sans serif;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  text-align: center;
+  margin: 0.75rem 0 1.2rem;
 `;
 
 export const InfoContent = styled.div`
@@ -59,11 +65,9 @@ export const InfoContent = styled.div`
 `;
 
 export const InfoText = styled.div`
-  max-width: 600px;
   color: #020509;
   font-weight: 300;
-  font-size: 20px;
-  /* line-height: 2; */
+  font-size: 1rem;
   letter-spacing: 0.5px;
 
   @media screen and (max-width: 540px) {
@@ -181,7 +185,7 @@ export const ToTopArrow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: ${({ scrollNav }) => (scrollNav ? "hidden" : "visible")};
+  visibility: ${({ scrollNav }) => (scrollNav ? "visible" : "hidden")};
   transition: 0.3s visibility ease-in;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

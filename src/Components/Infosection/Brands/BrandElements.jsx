@@ -15,20 +15,6 @@ export const BrandsWrapper = styled.div`
   margin: -1rem auto 0;
 `;
 
-export const BrandsText = styled.p`
-  font-size: 1.2rem;
-  font-family: "Titilium Web";
-  line-height: 1;
-  letter-spacing: 0.5px;
-  color: #000;
-  max-width: 75%;
-  text-align: justify;
-
-  @media (max-width: 540px) {
-    padding-top: 1.5rem;
-  }
-`;
-
 export const BrandsImgWrapper = styled.div`
   margin-top: 3rem;
   display: grid;

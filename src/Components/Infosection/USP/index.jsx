@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { InfoHeading } from "../InfoElements";
+import { InfoHeading, InfoSubtitle } from "../InfoElements";
 import {
   UspContainer,
   UspCardsWrapper,
@@ -18,6 +18,10 @@ class UspCards extends Component {
     return (
       <UspContainer>
         <InfoHeading>Why Choose Us?</InfoHeading>
+        <InfoSubtitle>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis,
+          facilis.
+        </InfoSubtitle>
 
         <UspCardsWrapper>
           <UspCard data-aos="flip-right">

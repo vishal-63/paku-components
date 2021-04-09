@@ -25,7 +25,7 @@ const Herosection = ({ slides }) => {
   };
 
   useEffect(() => {
-    const Interval = setInterval(nextSlide, 5000);
+    const Interval = setInterval(nextSlide, 9000);
     return () => {
       clearInterval(Interval);
     };
