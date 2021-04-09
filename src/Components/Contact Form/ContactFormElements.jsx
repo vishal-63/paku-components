@@ -23,26 +23,19 @@ export const ContactSectionWrapper = styled.div`
   background-color: #fff;
   box-shadow: 12px 16px 15px rgba(0, 0, 0, 0.2);
   margin-top: 2rem;
+  width: calc(100vw - 50px);
 
   @media (max-width: 540px) {
     flex-direction: column;
-    width: 80%;
+    width: 90%;
   }
 `;
 
 export const ContactFormWrapper = styled.div`
-  width: 700px;
+  width: 50%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-
-  @media (max-width: 1024px) {
-    width: 550px;
-  }
-
-  @media (max-width: 900px) {
-    width: 450px;
-  }
 
   @media (max-width: 540px) {
     width: 100%;
@@ -78,7 +71,7 @@ export const NameEmailWrapper = styled.div`
   display: flex;
   justify-content: space-between;
   border-color: #01194f;
-  
+
   & input {
     width: 48%;
   }
@@ -97,14 +90,14 @@ export const ContactFormInput = styled.input`
   height: 50px;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.5rem 1rem;
-  margin: 1rem 0;
+  margin: 0.75rem 0;
 `;
 
 export const ContactFormMessage = styled.textarea`
   width: 100%;
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.5rem 1rem;
-  margin: 1.5rem 0;
+  margin: 0.75rem 0 1.5rem;
   resize: none;
 `;
 
@@ -128,31 +121,15 @@ export const ContactFormButton = styled.input`
 `;
 
 export const MapWrapper = styled.div`
-  width: 350px;
+  width: 50%;
   height: 450px;
   overflow: hidden;
 
   & .map {
     position: relative;
-    width: 350px !important;
+    width: 50% !important;
     height: 450px !important;
     overflow: hidden;
-  }
-
-  @media (max-width: 1100px) {
-    width: 300px;
-
-    .map {
-      width: 300px !important;
-    }
-  }
-
-  @media (max-width: 900px) {
-    width: 200px;
-
-    .map {
-      width: 200px !important;
-    }
   }
 
   @media (max-width: 540px) {

@@ -12,7 +12,7 @@ import {
   MapWrapper,
   ContactFormMessage,
 } from "./ContactFormElements";
-import { InfoHeading, InfoHeadingShadow } from "../Infosection/InfoElements";
+import { InfoHeading } from "../Infosection/InfoElements";
 
 class ContactSection extends React.Component {
   constructor(props) {
@@ -34,8 +34,7 @@ class ContactSection extends React.Component {
   render() {
     return (
       <ContactSectionContainer>
-        <InfoHeadingShadow data-aos="zoom-in">Contact Us</InfoHeadingShadow>
-        <InfoHeading data-aos="zoom-in">Contact Us</InfoHeading>
+        <InfoHeading>Contact Us</InfoHeading>
         <ContactSectionWrapper data-aos="zoom-in">
           <ContactFormWrapper>
             <ContactFormTitle>Get in touch</ContactFormTitle>

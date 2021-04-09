@@ -24,7 +24,7 @@ export const NavWrapper = styled.div`
   width: 100%;
   margin: 0 2rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
 
   @media screen and (max-width: 768px) {

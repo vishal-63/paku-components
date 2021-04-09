@@ -32,23 +32,6 @@ export const InfoTitle = styled.div`
   text-align: center;
 `;
 
-export const InfoHeadingShadow = styled.h1`
-  font-size: 45px;
-  letter-spacing: 3px;
-  opacity: 0.4;
-  text-transform: uppercase;
-  background: rgba(0, 0, 0, 0.2);
-  /* background: -webkit-linear-gradient(#040d16, #ccc 75%); */
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-
-  @media screen and (max-width: 540px) {
-    font-size: 32px;
-  }
-`;
-
 export const InfoHeading = styled.h1`
   font-size: 36px;
   text-transform: uppercase;

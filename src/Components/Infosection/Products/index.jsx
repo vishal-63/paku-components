@@ -13,15 +13,14 @@ import img1 from "../../../Images/radiator.jpg";
 import img2 from "../../../Images/core.jpg";
 import img3 from "../../../Images/condenser.png";
 import img4 from "../../../Images/intercooler.jpg";
-import { InfoHeading, InfoHeadingShadow } from "../InfoElements";
+import { InfoHeading } from "../InfoElements";
 
 class Products extends Component {
   state = {};
   render() {
     return (
       <ProductCardsContainer>
-        <InfoHeadingShadow data-aos="zoom-in">Products</InfoHeadingShadow>
-        <InfoHeading data-aos="zoom-in">Products</InfoHeading>
+        <InfoHeading>Products</InfoHeading>
 
         <ProductCardsWrapper>
           <ProductCard data-aos="flip-right">

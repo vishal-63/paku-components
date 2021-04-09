@@ -6,7 +6,6 @@ import {
   InfoContainer,
   InfoWrapper,
   InfoTitle,
-  InfoHeadingShadow,
   InfoHeading,
   InfoContent,
   InfoText,
@@ -32,8 +31,7 @@ class Infosection extends Component {
       <InfoContainer>
         <InfoWrapper>
           <InfoTitle>
-            <InfoHeadingShadow data-aos="zoom-in">ABOUT US</InfoHeadingShadow>
-            <InfoHeading data-aos="zoom-in">ABOUT US</InfoHeading>
+            <InfoHeading>ABOUT US</InfoHeading>
           </InfoTitle>
           <InfoContent>
             <InfoText data-aos="zoom-in">

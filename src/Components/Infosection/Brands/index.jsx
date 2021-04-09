@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { InfoHeading, InfoHeadingShadow } from "../InfoElements";
+import { InfoHeading } from "../InfoElements";
 import {
   BrandsContainer,
   BrandsWrapper,
@@ -17,8 +17,7 @@ class Brands extends Component {
   render() {
     return (
       <BrandsContainer>
-        <InfoHeadingShadow data-aos="zoom-in">Our Partners</InfoHeadingShadow>
-        <InfoHeading data-aos="zoom-in">Our Partners</InfoHeading>
+        <InfoHeading>Our Partners</InfoHeading>
 
         <BrandsWrapper>
           <BrandsText data-aos="zoom-in">

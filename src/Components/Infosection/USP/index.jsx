@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { InfoHeading, InfoHeadingShadow } from "../InfoElements";
+import { InfoHeading } from "../InfoElements";
 import {
   UspContainer,
   UspCardsWrapper,
@@ -17,8 +17,7 @@ class UspCards extends Component {
   render() {
     return (
       <UspContainer>
-        <InfoHeadingShadow data-aos="zoom-in">Why Choose Us?</InfoHeadingShadow>
-        <InfoHeading data-aos="zoom-in">Why Choose Us?</InfoHeading>
+        <InfoHeading>Why Choose Us?</InfoHeading>
 
         <UspCardsWrapper>
           <UspCard data-aos="flip-right">
