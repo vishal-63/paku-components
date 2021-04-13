@@ -3,7 +3,6 @@ import { InfoHeading, InfoSubtitle } from "../InfoElements";
 import {
   BrandsContainer,
   BrandsWrapper,
-  BrandsText,
   BrandsImgWrapper,
   BrandsImg,
 } from "./BrandElements";
@@ -13,7 +12,6 @@ import img3 from "../../../Images/toyota.png";
 import img4 from "../../../Images/volkswagen.png";
 
 class Brands extends Component {
-  state = {};
   render() {
     return (
       <BrandsContainer>

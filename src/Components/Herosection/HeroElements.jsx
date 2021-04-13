@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 export const HerosectionSlider = styled.section`
   position: relative;
@@ -34,6 +34,7 @@ export const HeroText = styled.div`
 
 export const HeroHeading = styled.h1`
   font-size: 48px;
+  font-family: Helvetica, sans-serif;
   font-weight: 700;
   color: #00b4d8;
   letter-spacing: 2px;
@@ -49,7 +50,7 @@ export const HeroSubtitle = styled.p`
   font-size: 24px;
   font-weight: 500;
   color: #e9f6fc;
-  font-family: "Titillium Web", sans-serif;
+  letter-spacing: 0.5px;
   z-index: 999;
 
   @media screen and (max-width: 540px) {
@@ -118,7 +119,6 @@ export const HeroCurrentSlideNo = styled.div`
 `;
 
 export const HeroSlideNo = styled.div`
-  font-family: "Titillium Web", sans-serif;
   font-size: 14px;
   display: flex;
   justify-content: center;

@@ -1,11 +1,10 @@
 import React, { Component } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import img from "../../Images/img-5.jpg";
+import img from "../../Images/car.svg";
 import {
   InfoContainer,
   InfoWrapper,
-  InfoTitle,
   InfoHeading,
   InfoContent,
   InfoText,
@@ -21,19 +20,16 @@ import UspCards from "./USP";
 import Brands from "./Brands";
 
 class Infosection extends Component {
-  state = {};
   render() {
     AOS.init({
-      duration: 1500,
+      duration: 1000,
     });
 
     return (
       <InfoContainer>
         <InfoWrapper>
-          <InfoTitle>
-            <InfoHeading>ABOUT US</InfoHeading>
-          </InfoTitle>
           <InfoContent>
+            <InfoHeading>ABOUT US</InfoHeading>
             <InfoText data-aos="zoom-in">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis
               natus dolorem veritatis asperiores praesentium cumque doloremque
@@ -52,13 +48,13 @@ class Infosection extends Component {
                 <InfoBtnSpan2>Know More</InfoBtnSpan2>
               </InfoBtn>
             </InfoText>
-            <InfoImg
-              src={img}
-              alt="image"
-              data-aos="zoom-in"
-              data-aos-delay="200"
-            />
           </InfoContent>
+          <InfoImg
+            src={img}
+            alt="image"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+          />
         </InfoWrapper>
 
         <Products />

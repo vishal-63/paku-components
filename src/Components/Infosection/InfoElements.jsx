@@ -17,28 +17,24 @@ export const InfoWrapper = styled.div`
   margin: 3rem auto;
   padding: 36px 48px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 
   @media screen and (max-width: 900px) {
     height: 100%;
-    padding: 1rem 2rem;
+    padding: 1rem 2.5rem;
     margin-top: 30px;
+    flex-direction: column;
   }
 `;
 
-export const InfoTitle = styled.div`
-  text-align: center;
-`;
-
 export const InfoHeading = styled.h1`
+  font-family: Helvetica, sans-serif;
   font-size: 2.2rem;
   text-transform: uppercase;
   letter-spacing: 3px;
   color: #01194f;
   text-align: center;
-  position: relative;
 
   @media screen and (max-width: 540px) {
     font-size: 28px;
@@ -46,9 +42,8 @@ export const InfoHeading = styled.h1`
 `;
 
 export const InfoSubtitle = styled.p`
-  font-family: "Titillium Web", sans serif;
   font-size: 1.2rem;
-  letter-spacing: 1px;
+  letter-spacing: 0.3px;
   text-align: center;
   margin: 0.75rem 0 1.2rem;
 `;
@@ -57,7 +52,8 @@ export const InfoContent = styled.div`
   margin: 2rem auto 0;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
+  flex-direction: column;
 
   @media screen and (max-width: 900px) {
     flex-direction: column;
@@ -67,8 +63,9 @@ export const InfoContent = styled.div`
 export const InfoText = styled.div`
   color: #020509;
   font-weight: 300;
-  font-size: 1rem;
+  font-size: 0.875rem;
   letter-spacing: 0.5px;
+  margin-top: 1rem;
 
   @media screen and (max-width: 540px) {
     font-size: 16px;
@@ -89,12 +86,11 @@ export const InfoListItems = styled.li`
 export const InfoImg = styled.img`
   margin-left: 20px;
   width: 500px;
-  height: 300px;
-  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
 
   @media screen and (max-width: 900px) {
     margin: 30px 0 0 0;
     width: 100%;
+    max-height: 350px;
   }
 `;
 
@@ -103,7 +99,7 @@ export const InfoBtn = styled.div`
   padding: 10px 25px;
   width: 150px;
   height: 42.5px;
-  font-size: 18px;
+  font-size: 1.125rem;
   color: #01194f;
   position: relative;
   background: transparent;

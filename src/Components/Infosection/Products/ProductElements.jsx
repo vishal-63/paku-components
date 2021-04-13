@@ -41,7 +41,9 @@ export const ProductCard = styled.div`
   align-items: center;
   flex-direction: column;
   /* border: 1.5px solid rgba(0, 0, 0, 0.3); */
-  box-shadow: 4px 5px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 10px 16px 19px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow: 10px 16px 19px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 10px 16px 19px 0px rgba(0, 0, 0, 0.3);
   overflow: hidden;
 
   &:hover span {

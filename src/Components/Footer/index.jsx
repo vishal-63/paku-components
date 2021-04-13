@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import logo from "../../Images/logo.png";
 import { MdLocationOn } from "react-icons/md";
 import { BiPhone } from "react-icons/bi";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
@@ -15,14 +16,11 @@ import {
 } from "./FooterElements";
 
 class Footer extends Component {
-  state = {};
   render() {
     return (
       <FooterContainer>
         <FooterWrapper>
-          <FooterLogo>
-            Paku<br></br>Components
-          </FooterLogo>
+          <FooterLogo src={logo}></FooterLogo>
           <FooterSectionWrapper>
             <FooterIcon>
               {" "}

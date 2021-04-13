@@ -33,6 +33,7 @@ export const NavWrapper = styled.div`
 `;
 
 export const NavTitle = styled.div`
+  font-family: Helvetica, sans-serif;
   color: #00b4d8;
   font-size: 2rem;
   font-weight: 600;
@@ -44,8 +45,8 @@ export const NavTitle = styled.div`
 `;
 
 export const NavLogo = styled.img`
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 `;
 
 export const MobileIcon = styled.div`
@@ -60,7 +61,7 @@ export const MobileIcon = styled.div`
     transform: translate(-100%, 50%);
     font-size: 1.8rem;
     cursor: pointer;
-    color: #01194f;
+    color: #00b4d8;
     z-index: 10;
     transition: all 0.2s ease;
   }
@@ -74,7 +75,7 @@ export const CloseIcon = styled.div`
   transform: translate(-100%, 50%);
   font-size: 1.8rem;
   cursor: pointer;
-  color: #01194f;
+  color: #00b4d8;
   transition: all 0.2s ease;
 `;
 

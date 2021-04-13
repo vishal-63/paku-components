@@ -15,13 +15,14 @@ export const ContactSectionTitle = styled.h1`
   color: #1d9bc9;
   font-size: 2.5rem;
   text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
 `;
 
 export const ContactSectionWrapper = styled.div`
   display: flex;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 12px 16px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3);
   margin-top: 2rem;
   width: calc(100vw - 50px);
 
@@ -91,6 +92,11 @@ export const ContactFormInput = styled.input`
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding: 0.5rem 1rem;
   margin: 0.75rem 0;
+  font-family: "Montserrat", sans-serif;
+
+  &:focus {
+    border-color: #0377b5;
+  }
 `;
 
 export const ContactFormMessage = styled.textarea`
@@ -110,13 +116,11 @@ export const ContactFormButton = styled.input`
   padding: 0.5rem 2rem;
   text-align: center;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 
   &:hover {
-    color: #01194f;
-    background-color: transparent;
-    border: 1px solid #01194f;
-    transition: all 0.3s ease-in-out;
+    background-color: #012883;
+    transition: all 0.2s ease-in-out;
   }
 `;
 

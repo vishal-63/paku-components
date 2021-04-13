@@ -31,7 +31,9 @@ const Navbar = ({ isOpen, toggle }) => {
   return (
     <NavbarContainer scrollNav={scrollNav} isOpen={isOpen}>
       <NavWrapper>
-        <NavTitle to="/">PAKU</NavTitle>
+        <NavTitle to="/">
+          <NavLogo src={logo}></NavLogo>
+        </NavTitle>
         <MobileIcon onClick={toggle} isOpen={isOpen}>
           <GiHamburgerMenu />
         </MobileIcon>

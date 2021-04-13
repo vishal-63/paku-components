@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const FooterContainer = styled.section`
   width: 100%;
@@ -11,7 +11,7 @@ export const FooterContainer = styled.section`
 
 export const FooterWrapper = styled.div`
   width: 85%;
-  margin: 3rem auto;
+  margin: 2rem auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -33,10 +33,9 @@ export const FooterWrapper = styled.div`
   }
 `;
 
-export const FooterLogo = styled.h3`
-  font-size: 1.4rem;
-  color: #fff;
-  text-transform: uppercase;
+export const FooterLogo = styled.img`
+  max-height: 120px;
+  width: auto;
 `;
 
 export const FooterSectionWrapper = styled.div`
@@ -45,7 +44,7 @@ export const FooterSectionWrapper = styled.div`
   align-items: center;
 
   @media (max-width: 540px) {
-    margin: .75rem 0;
+    margin: 0.75rem 0;
   }
 `;
 
@@ -103,4 +102,4 @@ export const CopyRightWrapper = styled.div`
 export const CopyRightText = styled.div`
   font-size: 0.7rem;
   color: #fff;
-`
+`;

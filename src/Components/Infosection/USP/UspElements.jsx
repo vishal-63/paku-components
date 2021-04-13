@@ -101,6 +101,7 @@ export const UspCardTitle = styled.h3`
   text-transform: uppercase;
   font-weight: 500;
   transition: all 0.3s ease-in;
+  font-family: Helvetica, sans-serif;
 
   @media (max-width: 900px) {
     margin-top: 10px;
@@ -109,7 +110,7 @@ export const UspCardTitle = styled.h3`
 
 export const UspCardText = styled.p`
   color: #000;
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   letter-spacing: 0.3px;
   margin-top: 1.5rem;
 `;
