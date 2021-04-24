@@ -1,0 +1,2 @@
+*{margin:0;padding:0;box-sizing:border-box;font-family:"Montserrat",sans-serif}body{background-color:#fff}button,input,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}.slide{transform:translateX(100%)}.slide,.slide.active{transition:all 1s ease}.slide.active{transform:translate(0);animation:slide-out 1s ease 8.7s}@keyframes slide-out{0%{transform:translateX(0)}to{transform:translateX(-100%)}}
+/*# sourceMappingURL=main.23168356.chunk.css.map */

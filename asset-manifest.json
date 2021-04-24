@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/paku-components-v1.1/static/css/main.23168356.chunk.css",
+    "main.js": "/paku-components-v1.1/static/js/main.150f4d4f.chunk.js",
+    "main.js.map": "/paku-components-v1.1/static/js/main.150f4d4f.chunk.js.map",
+    "runtime-main.js": "/paku-components-v1.1/static/js/runtime-main.7c3e9914.js",
+    "runtime-main.js.map": "/paku-components-v1.1/static/js/runtime-main.7c3e9914.js.map",
+    "static/css/2.30fbed10.chunk.css": "/paku-components-v1.1/static/css/2.30fbed10.chunk.css",
+    "static/js/2.a7a8038c.chunk.js": "/paku-components-v1.1/static/js/2.a7a8038c.chunk.js",
+    "static/js/2.a7a8038c.chunk.js.map": "/paku-components-v1.1/static/js/2.a7a8038c.chunk.js.map",
+    "index.html": "/paku-components-v1.1/index.html",
+    "static/css/2.30fbed10.chunk.css.map": "/paku-components-v1.1/static/css/2.30fbed10.chunk.css.map",
+    "static/css/main.23168356.chunk.css.map": "/paku-components-v1.1/static/css/main.23168356.chunk.css.map",
+    "static/js/2.a7a8038c.chunk.js.LICENSE.txt": "/paku-components-v1.1/static/js/2.a7a8038c.chunk.js.LICENSE.txt",
+    "static/media/about.ed9c499c.png": "/paku-components-v1.1/static/media/about.ed9c499c.png",
+    "static/media/arrow.669ffbe1.svg": "/paku-components-v1.1/static/media/arrow.669ffbe1.svg",
+    "static/media/car.1bf8d74d.svg": "/paku-components-v1.1/static/media/car.1bf8d74d.svg",
+    "static/media/condenser.fe1e66c8.png": "/paku-components-v1.1/static/media/condenser.fe1e66c8.png",
+    "static/media/core.32d0cb0e.jpg": "/paku-components-v1.1/static/media/core.32d0cb0e.jpg",
+    "static/media/honda.a55c26ae.png": "/paku-components-v1.1/static/media/honda.a55c26ae.png",
+    "static/media/hyundai.acd743b8.png": "/paku-components-v1.1/static/media/hyundai.acd743b8.png",
+    "static/media/img-1.f9bb471b.png": "/paku-components-v1.1/static/media/img-1.f9bb471b.png",
+    "static/media/img-2.cea08a62.png": "/paku-components-v1.1/static/media/img-2.cea08a62.png",
+    "static/media/img-3.71d7d348.png": "/paku-components-v1.1/static/media/img-3.71d7d348.png",
+    "static/media/logo.8ce78c0e.png": "/paku-components-v1.1/static/media/logo.8ce78c0e.png",
+    "static/media/radiator.dd19f565.jpg": "/paku-components-v1.1/static/media/radiator.dd19f565.jpg",
+    "static/media/toyota.d058eb9e.png": "/paku-components-v1.1/static/media/toyota.d058eb9e.png",
+    "static/media/volkswagen.162a7d33.png": "/paku-components-v1.1/static/media/volkswagen.162a7d33.png",
+    "static/media/waves.dbc8fd71.svg": "/paku-components-v1.1/static/media/waves.dbc8fd71.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7c3e9914.js",
+    "static/css/2.30fbed10.chunk.css",
+    "static/js/2.a7a8038c.chunk.js",
+    "static/css/main.23168356.chunk.css",
+    "static/js/main.150f4d4f.chunk.js"
+  ]
+}
