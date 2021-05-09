@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import arrow from "../../Images/arrow.svg";
 
@@ -22,7 +23,7 @@ export const InfoWrapper = styled.div`
 
   @media screen and (max-width: 900px) {
     height: 100%;
-    padding: 1rem 2.5rem;
+    padding: 1rem 1.75rem;
     margin-top: 30px;
     flex-direction: column;
   }
@@ -39,6 +40,10 @@ export const InfoHeading = styled.h1`
   @media screen and (max-width: 540px) {
     font-size: 28px;
   }
+
+  &::nth-child(2) {
+    color: #00b4d8;
+  }
 `;
 
 export const InfoSubtitle = styled.p`
@@ -46,6 +51,11 @@ export const InfoSubtitle = styled.p`
   letter-spacing: 0.3px;
   text-align: center;
   margin: 0.75rem 0 1.2rem;
+
+  @media (max-width: 540px) {
+    padding: 0 1.5rem;
+    font-size: 1rem;
+  }
 `;
 
 export const InfoContent = styled.div`
@@ -63,9 +73,10 @@ export const InfoContent = styled.div`
 export const InfoText = styled.div`
   color: #020509;
   font-weight: 300;
-  font-size: 0.875rem;
+  font-size: 1rem;
   letter-spacing: 0.5px;
   margin-top: 1rem;
+  word-spacing: 5px;
 
   @media screen and (max-width: 540px) {
     font-size: 16px;
@@ -94,79 +105,24 @@ export const InfoImg = styled.img`
   }
 `;
 
-export const InfoBtn = styled.div`
-  margin-top: 25px;
-  padding: 10px 25px;
-  width: 150px;
-  height: 42.5px;
-  font-size: 1.125rem;
-  color: #01194f;
+export const InfoBtn = styled(Link)`
   position: relative;
-  background: transparent;
-  box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
-  border: none;
+  top: 1.5rem;
+  color: #fff;
+  background-color: #01194f;
+  border-radius: 30px;
+  border: 1px solid #01194f;
+  font-size: 1.2rem;
+  padding: 0.6rem 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
 
   &:hover {
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
+    background-color: #012883;
+    transition: all 0.2s ease-in-out;
   }
-
-  &:hover span:nth-child(1) {
-    transform: scale(0);
-    transition-delay: 0s;
-  }
-
-  &:hover span:nth-child(2) {
-    opacity: 1;
-    transform: scale(1);
-    transition-delay: 0s;
-  }
-
-  &:before,
-  &:after {
-    content: "";
-    width: 5px;
-    height: 100%;
-    position: absolute;
-    top: 0;
-    background-color: #caf0f8;
-    transition: width 0.5s ease-in-out;
-    transition-delay: 0.5s;
-  }
-
-  &:before {
-    left: 0;
-  }
-
-  &:after {
-    right: 0;
-  }
-
-  &:hover:before,
-  &:hover:after {
-    transition: width 0.5s ease-in-out;
-    transition-delay: 0s;
-    width: 51%;
-  }
-`;
-
-export const InfoBtnSpan1 = styled.span`
-  position: absolute;
-  z-index: 1;
-  transition: 0.5s;
-  transition-delay: 0.75s;
-`;
-
-export const InfoBtnSpan2 = styled.span`
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  transition: 0.5s;
-  transition-delay: 0.5s;
-  transform: scale(3);
-  color: #01194f;
 `;
 
 export const ToTopArrow = styled.div`
@@ -192,7 +148,7 @@ export const ToTopArrow = styled.div`
   }
 
   @media (max-width: 540px) {
-    font-size: 1rem;
-    padding: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.6rem;
   }
 `;

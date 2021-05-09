@@ -5,7 +5,7 @@ export const UspContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin: 3rem auto;
-  padding: 36px 0;
+  padding: 0 0 36px;
 `;
 
 export const UspCardsWrapper = styled.div`

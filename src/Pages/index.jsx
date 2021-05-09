@@ -36,7 +36,7 @@ const Home = () => {
   //   setLoading(true);
   //   setTimeout(() => {
   //     setLoading(false);
-  //   }, 8000);
+  //   }, 3000);
   // }, []);
 
   document.onreadystatechange = function () {
@@ -51,10 +51,11 @@ const Home = () => {
     width: "100vw",
     height: "100vh",
     backgroundColor: "#000",
+    transition: "all 0.4s ease-out",
   };
 
   return (
-    <div>
+    <>
       {loading ? (
         <BeatLoader
           color={"#00b4d8"}
@@ -77,7 +78,7 @@ const Home = () => {
           </ToTopArrow>
         </>
       )}
-    </div>
+    </>
   );
 };
 

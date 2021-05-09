@@ -9,10 +9,6 @@ body {
   background-color: #fff;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 button,
 input,
 select,

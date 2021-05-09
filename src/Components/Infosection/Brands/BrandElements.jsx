@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const BrandsContainer = styled.section`
   width: 100%;
   margin: 3rem auto 2rem;
+  padding: 3rem 0;
   display: flex;
   flex-direction: column;
+  background-color: rgba(191, 219, 247, 0.5);
 `;
 
 export const BrandsWrapper = styled.div`
@@ -34,7 +36,7 @@ export const BrandsImgWrapper = styled.div`
 export const BrandsImg = styled.img`
   max-width: 200px;
   max-height: 100px;
-  filter: grayscale(1);
+  filter: grayscale(1) drop-shadow(3px 3px 20px rgba(0, 0, 0, 0.2));
   transition: all 0.4s ease;
   display: flex;
   justify-content: center;
@@ -42,7 +44,7 @@ export const BrandsImg = styled.img`
 
   &:hover {
     transition: all 0.4s ease;
-    filter: none;
+    filter: drop-shadow(3px 3px 20px rgba(0, 0, 0, 0.2));
   }
 
   @media (max-width: 900px) {

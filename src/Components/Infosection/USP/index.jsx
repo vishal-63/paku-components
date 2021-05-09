@@ -13,7 +13,6 @@ import { BiRupee } from "react-icons/bi";
 import { BsStar } from "react-icons/bs";
 
 class UspCards extends Component {
-  state = {};
   render() {
     return (
       <UspContainer>

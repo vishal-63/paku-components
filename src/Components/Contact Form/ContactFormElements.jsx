@@ -22,7 +22,7 @@ export const ContactSectionWrapper = styled.div`
   display: flex;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 15px 20px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
   margin-top: 2rem;
   width: calc(100vw - 50px);
 

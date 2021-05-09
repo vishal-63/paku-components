@@ -43,10 +43,7 @@ class Infosection extends Component {
                 <InfoListItems>Lorem, ipsum.</InfoListItems>
                 <InfoListItems>Lorem, ipsum.</InfoListItems>
               </InfoList>
-              <InfoBtn>
-                <InfoBtnSpan1>Know More</InfoBtnSpan1>
-                <InfoBtnSpan2>Know More</InfoBtnSpan2>
-              </InfoBtn>
+              <InfoBtn to="/about">Know More</InfoBtn>
             </InfoText>
           </InfoContent>
           <InfoImg

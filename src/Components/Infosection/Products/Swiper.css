@@ -1,0 +1,35 @@
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  max-width: 1000px;
+}
+
+@media (max-width: 900px) {
+  .swiper-container {
+    max-width: 85vw;
+  }
+}
+
+@media (max-width: 540px) {
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .swiper-button-next,
+  .swiper-button-next::after,
+  .swiper-button-prev,
+  .swiper-button-prev::after {
+    font-size: 2.5rem;
+    position: absolute;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-prev::after {
+    left: 0px;
+  }
+
+  .swiper-button-next,
+  .swiper-button-next::after {
+    right: 0px;
+  }
+}

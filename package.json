@@ -19,6 +19,7 @@
     "react-scroll": "^1.8.2",
     "react-spinners": "^0.10.6",
     "styled-components": "^5.2.1",
+    "swiper": "^6.5.9",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

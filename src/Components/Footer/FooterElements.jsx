@@ -67,12 +67,13 @@ export const FooterIcon = styled.div`
   }
 `;
 
-export const FooterText = styled.div`
+export const FooterText = styled.a`
   font-size: 0.7rem;
   color: #666;
   max-width: 160px;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-decoration: none;
 
   &:hover {
     color: #00b4d8;

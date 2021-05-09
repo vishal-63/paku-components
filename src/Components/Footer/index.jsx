@@ -23,8 +23,7 @@ class Footer extends Component {
           <FooterLogo src={logo}></FooterLogo>
           <FooterSectionWrapper>
             <FooterIcon>
-              {" "}
-              <MdLocationOn />{" "}
+              <MdLocationOn />
             </FooterIcon>
             <FooterText>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -32,30 +31,27 @@ class Footer extends Component {
           </FooterSectionWrapper>
           <FooterSectionWrapper>
             <FooterIcon>
-              {" "}
-              <BiPhone />{" "}
+              <BiPhone />
             </FooterIcon>
             <FooterContacts>
-              <FooterText>+91-8197302228</FooterText>
-              <FooterText>pakucomponents@gmail.com</FooterText>
+              <FooterText href="tel:+91-8197302228">+91-8197302228</FooterText>
+              <FooterText href="mailto:pakucomponents@gmail.com">
+                pakucomponents@gmail.com
+              </FooterText>
             </FooterContacts>
           </FooterSectionWrapper>
           <FooterSectionWrapper>
             <FooterIcon>
-              {" "}
-              <FaFacebookF />{" "}
+              <FaFacebookF />
             </FooterIcon>
             <FooterIcon>
-              {" "}
-              <FaInstagram />{" "}
+              <FaInstagram />
             </FooterIcon>
             <FooterIcon>
-              {" "}
-              <FaTwitter />{" "}
+              <FaTwitter />
             </FooterIcon>
             <FooterIcon>
-              {" "}
-              <FaYoutube />{" "}
+              <FaYoutube />
             </FooterIcon>
           </FooterSectionWrapper>
         </FooterWrapper>

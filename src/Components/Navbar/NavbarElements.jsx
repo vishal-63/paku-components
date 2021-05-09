@@ -14,6 +14,7 @@ export const NavbarContainer = styled.nav`
   top: ${({ scrollNav }) => (scrollNav ? "0" : "")};
   z-index: 20;
   transition: all 0.2s ease;
+  overflow-y: hidden;
 
   @media screen and (max-width: 768px) {
     width: 100%;
@@ -22,6 +23,7 @@ export const NavbarContainer = styled.nav`
 
 export const NavWrapper = styled.div`
   width: 100%;
+  height: 100%;
   margin: 0 2rem;
   display: flex;
   justify-content: space-between;
@@ -32,7 +34,7 @@ export const NavWrapper = styled.div`
   }
 `;
 
-export const NavTitle = styled.div`
+export const NavTitle = styled(Link)`
   font-family: Helvetica, sans-serif;
   color: #00b4d8;
   font-size: 2rem;

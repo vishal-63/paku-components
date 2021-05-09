@@ -6,14 +6,4 @@
 .slide.active {
   transition: all 1s ease;
   transform: translate(0);
-  animation: slide-out 1s ease 8.7s;
-}
-
-@keyframes slide-out {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
 }

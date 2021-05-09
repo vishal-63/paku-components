@@ -41,7 +41,7 @@ const Navbar = ({ isOpen, toggle }) => {
           <FaTimes />
         </CloseIcon>
         <NavMenu>
-          <NavLinks scrollNav={scrollNav} to="/">
+          <NavLinks scrollNav={scrollNav} to="/about">
             About
           </NavLinks>
           <NavLinks scrollNav={scrollNav} to="/">

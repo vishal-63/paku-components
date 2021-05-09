@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { FaPhoneAlt } from "react-icons/fa";
-import { HiMail } from "react-icons/hi";
+import { FiPhone, FiMail } from "react-icons/fi";
 import {
   TopbarContainer,
   TopbarContent,
@@ -17,14 +16,14 @@ class Topbar extends Component {
         <TopbarContent>
           <TopbarWrapper>
             <TopbarIcons>
-              <FaPhoneAlt />
+              <FiPhone />
             </TopbarIcons>
             <TopbarText>+91-8197302228</TopbarText>
             <TopbarText>+91-9023548954</TopbarText>
           </TopbarWrapper>
           <TopbarWrapper>
             <TopbarIcons>
-              <HiMail />
+              <FiMail />
             </TopbarIcons>
             <TopbarText>pakucomponents@gmail.com</TopbarText>
           </TopbarWrapper>

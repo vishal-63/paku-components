@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TopbarContainer = styled.div`
   width: 100%;
-  height: 35px;
+  height: 40px;
   background: transparent;
   display: flex;
   justify-content: center;
@@ -16,7 +16,7 @@ export const TopbarContent = styled.div`
   justify-content: center;
   align-items: center;
   color: #00b4d8;
-  border-bottom: 1.5px solid #0096c7;
+  border-bottom: 0.1px solid rgba(255, 255, 255, 0.2);
   z-index: 20;
 `;
 
@@ -27,8 +27,8 @@ export const TopbarWrapper = styled.div`
   font-size: 14px;
   padding: 0 20px;
   height: 100%;
-  border-left: 1.5px solid #0096c7;
-  border-right: 1.5px solid #0096c7;
+  border-left: 0.1px solid rgba(255, 255, 255, 0.2);
+  border-right: 0.1px solid rgba(255, 255, 255, 0.2);
   z-index: 20;
 
   &:nth-child(1) {
@@ -42,15 +42,23 @@ export const TopbarWrapper = styled.div`
 `;
 
 export const TopbarIcons = styled.span`
-  padding-top: 4px;
-  padding-right: 0px;
+  padding-top: 7px;
   justify-self: flex-start;
-  z-index: 20;
+  font-size: 1.1rem;
+  color: #0088a3;
+  @media screen and (max-width: 420px) {
+    font-size: 0.55rem;
+  }
 `;
 
 export const TopbarText = styled.span`
-  font-size: 14px;
-  padding-left: 10px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  color: #fff;
+  letter-spacing: 1.4px;
+  padding-left: 0.5rem;
   z-index: 20;
 
   @media screen and (max-width: 768px) {

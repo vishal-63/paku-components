@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HerosectionSlider = styled.section`
   position: relative;
-  top: -105px;
+  top: -110px;
   left: 0;
   width: 100%;
   height: 100vh;
@@ -18,6 +18,10 @@ export const HeroImage = styled.img`
   height: 100vh;
   z-index: 1;
   user-select: none;
+
+  @media (max-width: 540px) {
+    max-height: 97vh;
+  }
 `;
 
 export const HeroText = styled.div`
@@ -72,9 +76,10 @@ export const HeroDotsWrapper = styled.div`
   font-size: 10px;
 
   @media screen and (max-width: 900px) {
-    top: 95%;
-    left: 10%;
+    top: 90%;
+    right: 0;
     flex-direction: row;
+    width: 100%;
     height: 30px;
   }
 `;
@@ -97,7 +102,7 @@ export const HeroDot = styled.div`
 `;
 
 export const HeroLine = styled.div`
-  background-color: #01194f;
+  background-color: #005d70;
   height: 100px;
   width: 1.5px;
   margin: 10px 0;

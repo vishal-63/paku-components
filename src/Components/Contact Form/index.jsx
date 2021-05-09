@@ -142,7 +142,7 @@ class ContactSection extends React.Component {
         "Please fill this field";
     }
 
-    if (error === "") {
+    if (error == "") {
       this.sendEmail(serviceId, templateId, {
         from_name: this.state.name,
         reply_to: this.state.email,
@@ -150,7 +150,13 @@ class ContactSection extends React.Component {
         message: this.state.message,
       });
     } else {
-      console.log(error);
+      console.log(
+        this.state.name,
+        this.state.email,
+        this.state.subject,
+        this.state.message,
+        error
+      );
     }
   }
 
