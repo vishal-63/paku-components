@@ -15,9 +15,9 @@ export const TopbarContent = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #00b4d8;
-  border-bottom: 0.1px solid rgba(255, 255, 255, 0.2);
   z-index: 20;
+  color: ${(props) => props.color};
+  border-bottom: 0.1px solid ${(props) => props.border};
 `;
 
 export const TopbarWrapper = styled.div`
@@ -27,8 +27,8 @@ export const TopbarWrapper = styled.div`
   font-size: 14px;
   padding: 0 20px;
   height: 100%;
-  border-left: 0.1px solid rgba(255, 255, 255, 0.2);
-  border-right: 0.1px solid rgba(255, 255, 255, 0.2);
+  border-left: 0.1px solid ${(props) => props.border};
+  border-right: 0.1px solid ${(props) => props.border};
   z-index: 20;
 
   &:nth-child(1) {
@@ -46,8 +46,10 @@ export const TopbarIcons = styled.span`
   justify-self: flex-start;
   font-size: 1.1rem;
   color: #0088a3;
+
   @media screen and (max-width: 420px) {
-    font-size: 0.55rem;
+    font-size: 0.65rem;
+    padding-top: 4.5px;
   }
 `;
 
@@ -56,7 +58,6 @@ export const TopbarText = styled.span`
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-size: 12px;
   font-weight: 200;
-  color: #fff;
   letter-spacing: 1.4px;
   padding-left: 0.5rem;
   z-index: 20;

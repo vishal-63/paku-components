@@ -1,0 +1,9 @@
+.text {
+  visibility: hidden;
+  transition: all 0.75s ease-in;
+}
+
+.text.active {
+  visibility: visible;
+  transition: all 0.75s ease-in;
+}

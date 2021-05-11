@@ -13,7 +13,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       <Navbar isOpen={isOpen} toggle={toggle} />
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to="/">About</SidebarLink>
+          <SidebarLink to="/about">About</SidebarLink>
           <SidebarLink to="/">Products</SidebarLink>
           <SidebarLink to="/">Contact</SidebarLink>
         </SidebarMenu>

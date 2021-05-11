@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 export const NavbarContainer = styled.nav`
   background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
-  box-shadow: ${({ isOpen }) =>
-    isOpen ? "0 0 0 rgb(255,255,255)" : "0 5px 20px rgba(0,0,0,0.2)"};
+  box-shadow: ${({ scrollNav }) =>
+    scrollNav ? "0 5px 20px rgba(0,0,0,0.2)" : ""};
   height: 70px;
   display: flex;
   justify-content: flex-start;
@@ -44,6 +44,7 @@ export const NavTitle = styled(Link)`
   align-items: center;
   text-decoration: none;
   transition: all 0.2s ease;
+  transform: translateY(10px);
 `;
 
 export const NavLogo = styled.img`
@@ -53,6 +54,7 @@ export const NavLogo = styled.img`
 
 export const MobileIcon = styled.div`
   display: none;
+  height: 28.8px;
   transition: 0.3s all ease-in-out;
 
   @media screen and (max-width: 768px) {
@@ -79,6 +81,7 @@ export const CloseIcon = styled.div`
   cursor: pointer;
   color: #00b4d8;
   transition: all 0.2s ease;
+  height: 28.8px;
 `;
 
 export const NavMenu = styled.div`

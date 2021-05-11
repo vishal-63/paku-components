@@ -50,7 +50,7 @@ const Home = () => {
     alignItems: "center",
     width: "100vw",
     height: "100vh",
-    backgroundColor: "#000",
+    backgroundColor: "#fff",
     transition: "all 0.4s ease-out",
   };
 
@@ -58,14 +58,14 @@ const Home = () => {
     <>
       {loading ? (
         <BeatLoader
-          color={"#00b4d8"}
+          color={"#00194f"}
           loading={loading}
           size={20}
           css={loadingScreen}
         />
       ) : (
         <>
-          <Topbar />
+          <Topbar color="#efefef" border="rgba(255, 255, 255, 0.2)" />
           <Navbar isOpen={isOpen} toggle={toggle} />
           <Sidebar isOpen={isOpen} toggle={toggle} />
           <Herosection slides={SliderData} />

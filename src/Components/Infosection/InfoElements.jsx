@@ -59,15 +59,12 @@ export const InfoSubtitle = styled.p`
 `;
 
 export const InfoContent = styled.div`
+  position: relative;
   margin: 2rem auto 0;
   display: flex;
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-
-  @media screen and (max-width: 900px) {
-    flex-direction: column;
-  }
 `;
 
 export const InfoText = styled.div`
@@ -77,6 +74,7 @@ export const InfoText = styled.div`
   letter-spacing: 0.5px;
   margin-top: 1rem;
   word-spacing: 5px;
+  position: relative;
 
   @media screen and (max-width: 540px) {
     font-size: 16px;
@@ -87,6 +85,7 @@ export const InfoText = styled.div`
 export const InfoList = styled.ul`
   margin: 20px 0 0 20px;
   list-style: none url(${arrow});
+  position: relative;
 `;
 
 export const InfoListItems = styled.li`
@@ -97,11 +96,12 @@ export const InfoListItems = styled.li`
 export const InfoImg = styled.img`
   margin-left: 20px;
   width: 500px;
+  position: relative;
 
   @media screen and (max-width: 900px) {
-    margin: 30px 0 0 0;
     width: 100%;
     max-height: 350px;
+    margin-top: 30px;
   }
 `;
 

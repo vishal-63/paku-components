@@ -9,8 +9,8 @@ export const ProductCardsContainer = styled.div`
   margin: 3rem auto;
   padding: 3rem 0;
   width: 100%;
-  background-color: rgba(191, 219, 247, 0.5);
-  /* background-color: rgba(168, 208, 219, 0.5); */
+  background-color: #dfedfb;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236c6c6c' fill-opacity='0.38' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 
   @media (max-width: 900px) {
     margin-top: 30px;
@@ -58,15 +58,24 @@ export const ProductCard = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  /* border: 1.5px solid rgba(0, 0, 0, 0.3); */
   box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
   -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
   -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
   overflow: hidden;
 
-  &:hover span {
-    transition: left 0.5s linear;
-    left: 0;
+  &::after {
+    content: "";
+    background-color: #0077b6;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-101%);
+  }
+
+  &:hover::after {
+    transform: translateX(0);
+    transition: 0.5s linear;
   }
 
   @media (max-width: 1024px) {
@@ -104,24 +113,15 @@ export const ProductCardLink = styled(Link)`
   text-align: center;
   text-decoration: none;
   color: #000;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  margin-bottom: -15px;
+  margin-bottom: 10px;
 
   @media (max-width: 1024px) {
     margin-bottom: 0;
   }
 
   @media (max-width: 900px) {
-    margin-bottom: -15px;
+    padding-top: 15px;
   }
-`;
-
-export const ProductCardBottomLine = styled.span`
-  height: 5px;
-  width: 250px;
-  display: inline-block;
-  position: relative;
-  left: -250px;
-  background-color: #0077b6;
 `;

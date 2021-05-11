@@ -36,30 +36,27 @@ class Products extends Component {
             <SwiperSlide>
               <ProductCardSection>
                 <ProductCard data-aos="flip-right">
-                  <ProductCardTitle>Radiator</ProductCardTitle>
                   <ProductCardImgWrapper>
                     <ProductCardImg src={img1} alt="radiator"></ProductCardImg>
                   </ProductCardImgWrapper>
+                  <ProductCardTitle>Radiator</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
-                  <ProductCardBottomLine />
                 </ProductCard>
 
                 <ProductCard data-aos="flip-right" data-aos-delay="100">
-                  <ProductCardTitle>Core</ProductCardTitle>
                   <ProductCardImgWrapper>
                     <ProductCardImg src={img2} alt="core"></ProductCardImg>
                   </ProductCardImgWrapper>
+                  <ProductCardTitle>Core</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
-                  <ProductCardBottomLine />
                 </ProductCard>
 
                 <ProductCard data-aos="flip-right" data-aos-delay="200">
-                  <ProductCardTitle>Condenser</ProductCardTitle>
                   <ProductCardImgWrapper>
                     <ProductCardImg src={img3} alt="condenser"></ProductCardImg>
                   </ProductCardImgWrapper>
+                  <ProductCardTitle>Condenser</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
-                  <ProductCardBottomLine />
                 </ProductCard>
               </ProductCardSection>
             </SwiperSlide>
@@ -67,37 +64,34 @@ class Products extends Component {
             <SwiperSlide>
               <ProductCardSection>
                 <ProductCard data-aos="flip-right" data-aos-delay="300">
-                  <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardImgWrapper>
                     <ProductCardImg
                       src={img4}
                       alt="intercooler"
                     ></ProductCardImg>
                   </ProductCardImgWrapper>
+                  <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
-                  <ProductCardBottomLine />
                 </ProductCard>
                 <ProductCard data-aos="flip-right" data-aos-delay="300">
-                  <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardImgWrapper>
                     <ProductCardImg
                       src={img4}
                       alt="intercooler"
                     ></ProductCardImg>
                   </ProductCardImgWrapper>
+                  <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
-                  <ProductCardBottomLine />
                 </ProductCard>
                 <ProductCard data-aos="flip-right" data-aos-delay="300">
-                  <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardImgWrapper>
                     <ProductCardImg
                       src={img4}
                       alt="intercooler"
                     ></ProductCardImg>
                   </ProductCardImgWrapper>
+                  <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
-                  <ProductCardBottomLine />
                 </ProductCard>
               </ProductCardSection>
             </SwiperSlide>

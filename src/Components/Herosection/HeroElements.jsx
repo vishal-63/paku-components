@@ -7,6 +7,7 @@ export const HerosectionSlider = styled.section`
   width: 100%;
   height: 100vh;
   overflow: hidden;
+  background-color: #121212;
 `;
 
 export const HeroSlide = styled.div`
@@ -20,7 +21,13 @@ export const HeroImage = styled.img`
   user-select: none;
 
   @media (max-width: 540px) {
-    max-height: 97vh;
+    min-height: 98vh;
+    max-width: 850px;
+    max-height: 98%;
+    height: auto;
+    width: auto;
+    margin: auto;
+    transform: translateX(-25%);
   }
 `;
 

@@ -9,19 +9,18 @@ import {
 } from "./TopbarElements";
 
 class Topbar extends Component {
-  state = {};
   render() {
     return (
       <TopbarContainer>
-        <TopbarContent>
-          <TopbarWrapper>
+        <TopbarContent color={this.props.color} border={this.props.border}>
+          <TopbarWrapper border={this.props.border}>
             <TopbarIcons>
               <FiPhone />
             </TopbarIcons>
             <TopbarText>+91-8197302228</TopbarText>
-            <TopbarText>+91-9023548954</TopbarText>
+            <TopbarText border={this.props.border}>+91-9023548954</TopbarText>
           </TopbarWrapper>
-          <TopbarWrapper>
+          <TopbarWrapper border={this.props.border}>
             <TopbarIcons>
               <FiMail />
             </TopbarIcons>
