@@ -1,18 +1,19 @@
 {
   "files": {
-    "main.css": "/paku-components-v1.1/static/css/main.7ed567dc.chunk.css",
-    "main.js": "/paku-components-v1.1/static/js/main.da70c20a.chunk.js",
-    "main.js.map": "/paku-components-v1.1/static/js/main.da70c20a.chunk.js.map",
+    "main.css": "/paku-components-v1.1/static/css/main.08e1a45a.chunk.css",
+    "main.js": "/paku-components-v1.1/static/js/main.391d2239.chunk.js",
+    "main.js.map": "/paku-components-v1.1/static/js/main.391d2239.chunk.js.map",
     "runtime-main.js": "/paku-components-v1.1/static/js/runtime-main.7c3e9914.js",
     "runtime-main.js.map": "/paku-components-v1.1/static/js/runtime-main.7c3e9914.js.map",
     "static/css/2.fb228f7a.chunk.css": "/paku-components-v1.1/static/css/2.fb228f7a.chunk.css",
-    "static/js/2.c25ea00a.chunk.js": "/paku-components-v1.1/static/js/2.c25ea00a.chunk.js",
-    "static/js/2.c25ea00a.chunk.js.map": "/paku-components-v1.1/static/js/2.c25ea00a.chunk.js.map",
+    "static/js/2.732c356d.chunk.js": "/paku-components-v1.1/static/js/2.732c356d.chunk.js",
+    "static/js/2.732c356d.chunk.js.map": "/paku-components-v1.1/static/js/2.732c356d.chunk.js.map",
     "index.html": "/paku-components-v1.1/index.html",
     "static/css/2.fb228f7a.chunk.css.map": "/paku-components-v1.1/static/css/2.fb228f7a.chunk.css.map",
-    "static/css/main.7ed567dc.chunk.css.map": "/paku-components-v1.1/static/css/main.7ed567dc.chunk.css.map",
-    "static/js/2.c25ea00a.chunk.js.LICENSE.txt": "/paku-components-v1.1/static/js/2.c25ea00a.chunk.js.LICENSE.txt",
-    "static/media/about.ed9c499c.png": "/paku-components-v1.1/static/media/about.ed9c499c.png",
+    "static/css/main.08e1a45a.chunk.css.map": "/paku-components-v1.1/static/css/main.08e1a45a.chunk.css.map",
+    "static/js/2.732c356d.chunk.js.LICENSE.txt": "/paku-components-v1.1/static/js/2.732c356d.chunk.js.LICENSE.txt",
+    "static/media/about-1.c688c2bd.jpg": "/paku-components-v1.1/static/media/about-1.c688c2bd.jpg",
+    "static/media/about-background.4cb23ea8.png": "/paku-components-v1.1/static/media/about-background.4cb23ea8.png",
     "static/media/arrow.669ffbe1.svg": "/paku-components-v1.1/static/media/arrow.669ffbe1.svg",
     "static/media/car.1bf8d74d.svg": "/paku-components-v1.1/static/media/car.1bf8d74d.svg",
     "static/media/condenser.fe1e66c8.png": "/paku-components-v1.1/static/media/condenser.fe1e66c8.png",
@@ -21,17 +22,21 @@
     "static/media/hyundai.b560b9ee.png": "/paku-components-v1.1/static/media/hyundai.b560b9ee.png",
     "static/media/img-1.f9bb471b.png": "/paku-components-v1.1/static/media/img-1.f9bb471b.png",
     "static/media/img-2.cea08a62.png": "/paku-components-v1.1/static/media/img-2.cea08a62.png",
+    "static/media/img-3.28ef5821.png": "/paku-components-v1.1/static/media/img-3.28ef5821.png",
     "static/media/logo.8ce78c0e.png": "/paku-components-v1.1/static/media/logo.8ce78c0e.png",
+    "static/media/parallax.aa774f76.jpg": "/paku-components-v1.1/static/media/parallax.aa774f76.jpg",
     "static/media/radiator.dd19f565.jpg": "/paku-components-v1.1/static/media/radiator.dd19f565.jpg",
+    "static/media/team1.fea7fa75.jpg": "/paku-components-v1.1/static/media/team1.fea7fa75.jpg",
+    "static/media/team2.2c94b137.jpg": "/paku-components-v1.1/static/media/team2.2c94b137.jpg",
+    "static/media/team3.9284c555.jpg": "/paku-components-v1.1/static/media/team3.9284c555.jpg",
     "static/media/toyota.d058eb9e.png": "/paku-components-v1.1/static/media/toyota.d058eb9e.png",
-    "static/media/volkswagen.162a7d33.png": "/paku-components-v1.1/static/media/volkswagen.162a7d33.png",
-    "static/media/waves.dbc8fd71.svg": "/paku-components-v1.1/static/media/waves.dbc8fd71.svg"
+    "static/media/volkswagen.162a7d33.png": "/paku-components-v1.1/static/media/volkswagen.162a7d33.png"
   },
   "entrypoints": [
     "static/js/runtime-main.7c3e9914.js",
     "static/css/2.fb228f7a.chunk.css",
-    "static/js/2.c25ea00a.chunk.js",
-    "static/css/main.7ed567dc.chunk.css",
-    "static/js/main.da70c20a.chunk.js"
+    "static/js/2.732c356d.chunk.js",
+    "static/css/main.08e1a45a.chunk.css",
+    "static/js/main.391d2239.chunk.js"
   ]
 }
