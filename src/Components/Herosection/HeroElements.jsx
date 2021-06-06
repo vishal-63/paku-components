@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HerosectionSlider = styled.section`
   position: relative;
-  top: -110px;
+  top: -120px;
   left: 0;
   width: 100%;
   height: 100vh;

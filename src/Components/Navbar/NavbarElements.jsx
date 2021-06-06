@@ -5,7 +5,7 @@ export const NavbarContainer = styled.nav`
   background-color: ${({ scrollNav }) => (scrollNav ? "#fff" : "transparent")};
   box-shadow: ${({ scrollNav }) =>
     scrollNav ? "0 5px 20px rgba(0,0,0,0.2)" : ""};
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -23,8 +23,9 @@ export const NavbarContainer = styled.nav`
 
 export const NavWrapper = styled.div`
   width: 100%;
+  max-width: 1200px;
   height: 100%;
-  margin: 0 2rem;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -48,8 +49,9 @@ export const NavTitle = styled(Link)`
 `;
 
 export const NavLogo = styled.img`
-  width: 100px;
-  height: 100px;
+  width: 130px;
+  height: 130px;
+  transform: translateY(-5%);
 `;
 
 export const MobileIcon = styled.div`
@@ -90,7 +92,7 @@ export const NavMenu = styled.div`
   align-items: center;
   list-style: none;
   text-align: center;
-  padding-left: 48px;
+  padding-left: 3rem;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -99,10 +101,10 @@ export const NavMenu = styled.div`
 
 export const NavLinks = styled(Link)`
   color: ${({ scrollNav }) => (scrollNav ? "#01194f" : "#00b4d8")};
-  padding: 10px 20px;
+  padding: 0.5rem 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.05rem;
   margin: 0 10px;
   font-weight: 500;
   border: 1px solid transparent;

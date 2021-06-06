@@ -22,7 +22,7 @@ export const ContactSectionWrapper = styled.div`
   display: flex;
   overflow: hidden;
   background-color: #fff;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 29px 0 rgb(0 0 0 / 19%);
   margin-top: 2rem;
   width: calc(100vw - 50px);
 
@@ -38,6 +38,12 @@ export const ContactFormWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
 
+  @media (max-width: 768px) {
+    &.contact-page {
+      width: 100%;
+    }
+  }
+
   @media (max-width: 540px) {
     width: 100%;
   }
@@ -49,8 +55,18 @@ export const ContactFormTitle = styled.h2`
   padding: 1rem 0 0 2rem;
   text-transform: uppercase;
 
+  @media (max-width: 768px) {
+    &.contact-page {
+      padding: 1rem 0 0 1rem;
+    }
+  }
+
   @media (max-width: 540px) {
     padding: 1rem 0 0 1rem;
+
+    &.contact-page {
+      padding: 1rem 0 0 0 !important;
+    }
   }
 `;
 
@@ -62,8 +78,14 @@ export const ContactForm = styled.form`
   align-items: flex-start;
   padding: 1rem 2rem;
 
-  @media (max-width: 540px) {
+  @media (max-width: 768px) {
     padding: 1rem;
+  }
+
+  @media (max-width: 540px) {
+    &.contact-page {
+      padding: 0;
+    }
   }
 `;
 

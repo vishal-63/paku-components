@@ -15,7 +15,7 @@ class Brands extends Component {
   render() {
     return (
       <BrandsContainer>
-        <InfoHeading>Our Partners</InfoHeading>
+        <InfoHeading style={{ color: "#3a7bd5" }}>Our Partners</InfoHeading>
         <InfoSubtitle>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
           quasi!

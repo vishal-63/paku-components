@@ -1,17 +1,19 @@
-import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const PageTitle = styled.div`
   width: 100%;
+  padding: 2rem 20vw;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   background: url(${(props) => props.bgImg}) center;
+  background-size: cover;
   min-height: 100px;
   color: #fff;
   font-size: 1.5rem;
-  font-family: "Lato", sans-serif;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
 
   @media (min-width: 900px) {
     min-height: 192px;
@@ -39,12 +41,21 @@ const HomeLink = styled(Link)`
   text-decoration: none;
 `;
 
-const Header = ({ page, bgImg }) => {
+const Header = ({ title, page, pages, bgImg }) => {
+  console.log(pages);
   return (
     <>
-      <PageTitle bgImg={bgImg}>{page}</PageTitle>
+      <PageTitle bgImg={bgImg}>{title}</PageTitle>
       <PageCrumb>
-        <HomeLink to="/">Home</HomeLink> &nbsp;&nbsp; > &nbsp;&nbsp; {page}
+        {pages.map((pages, index) => {
+          return (
+            <>
+              <HomeLink to={pages.link}>{pages.page}</HomeLink>{" "}
+              &nbsp;&nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp;&nbsp;
+            </>
+          );
+        })}
+        {page}
       </PageCrumb>
     </>
   );

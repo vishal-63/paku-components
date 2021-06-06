@@ -47,7 +47,10 @@ const Navbar = ({ isOpen, toggle }) => {
           <NavLinks scrollNav={scrollNav} to="/">
             Products
           </NavLinks>
-          <NavLinks scrollNav={scrollNav} to="/">
+          <NavLinks scrollNav={scrollNav} to="/blogs">
+            Blogs
+          </NavLinks>
+          <NavLinks scrollNav={scrollNav} to="/contact">
             Contact
           </NavLinks>
         </NavMenu>

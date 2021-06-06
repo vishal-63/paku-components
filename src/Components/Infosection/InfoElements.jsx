@@ -121,6 +121,7 @@ export const InfoBtn = styled(Link)`
 
   &:hover {
     background-color: #012883;
+    border-color: #012883;
     transition: all 0.2s ease-in-out;
   }
 `;

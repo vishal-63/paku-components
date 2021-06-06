@@ -9,8 +9,7 @@ export const ProductCardsContainer = styled.div`
   margin: 3rem auto;
   padding: 3rem 0;
   width: 100%;
-  background-color: #dfedfb;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%236c6c6c' fill-opacity='0.38' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
+  background-color: #eff1f7;
 
   @media (max-width: 900px) {
     margin-top: 30px;
@@ -58,14 +57,14 @@ export const ProductCard = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 29px 0 rgb(0 0 0 / 19%);
+  -webkit-box-shadow: 0 0 29px 0 rgb(0 0 0 / 19%);
+  -moz-box-shadow: 0 0 29px 0 rgb(0 0 0 / 19%);
   overflow: hidden;
 
   &::after {
     content: "";
-    background-color: #0077b6;
+    background-color: #3a7bd5;
     width: 100%;
     height: 4px;
     position: absolute;
@@ -92,7 +91,7 @@ export const ProductCard = styled.div`
 export const ProductCardTitle = styled.h2`
   font-size: 1.5rem;
   text-transform: uppercase;
-  color: #020509;
+  color: #000;
 `;
 
 export const ProductCardImgWrapper = styled.div`
@@ -108,12 +107,12 @@ export const ProductCardImg = styled.img`
 `;
 
 export const ProductCardLink = styled(Link)`
-  padding-top: 20px;
+  padding-top: 1rem;
   width: 90%;
   text-align: center;
   text-decoration: none;
-  color: #000;
   font-size: 1rem;
+  color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
   margin-bottom: 10px;
 

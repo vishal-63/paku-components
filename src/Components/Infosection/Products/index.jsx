@@ -28,7 +28,7 @@ class Products extends Component {
 
     return (
       <ProductCardsContainer>
-        <InfoHeading>Products</InfoHeading>
+        <InfoHeading style={{ color: "#3a7bd5" }}>Products</InfoHeading>
         <InfoSubtitle>The widest range of products you will find.</InfoSubtitle>
 
         <ProductCardsWrapper>

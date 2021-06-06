@@ -39,10 +39,10 @@ export const SidebarLink = styled(Link)`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 45px);
+  grid-template-rows: repeat(4, 45px);
   text-align: center;
 
   @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(3, 45px);
+    grid-template-rows: repeat(4, 45px);
   }
 `;
