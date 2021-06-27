@@ -1,6 +1,6 @@
-import img1 from "../../Images/img-1.png";
-import img2 from "../../Images/img-2.png";
-import img3 from "../../Images/img-3-min.png";
+import img1 from "../../Images/img-1.webp";
+import img2 from "../../Images/img-2.webp";
+import img3 from "../../Images/img-3.webp";
 
 export const SliderData = [
   {

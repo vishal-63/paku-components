@@ -6,16 +6,14 @@ import {
   ProductCardTitle,
   ProductCardImg,
   ProductCardLink,
-  ProductCardBottomLine,
   ProductCardImgWrapper,
   ProductCardSection,
 } from "./ProductElements";
-import img1 from "../../../Images/radiator.jpg";
+import img1 from "../../../Images/radiator.webp";
 import img2 from "../../../Images/core.jpg";
 import img3 from "../../../Images/condenser.png";
 import img4 from "../../../Images/intercooler.jpg";
 import { InfoHeading, InfoSubtitle } from "../InfoElements";
-import { AiFillCaretLeft, AiFillCaretRight } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Navigation } from "swiper/core";
 import "swiper/swiper.min.css";

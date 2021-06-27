@@ -8,7 +8,7 @@ import Header from "../Components/Header";
 import { ToTopArrow } from "../Components/Infosection/InfoElements";
 import bgImg from "../../src/Images/blog1-bg.jpg";
 import blog1 from "../../src/Images/blog-1.jpg";
-import blog2 from "../../src/Images/blog-2.jpg";
+import blog2 from "../../src/Images/blog-2.webp";
 import blog3 from "../../src/Images/blog-3.jpg";
 import Blog from "../Components/Blogs/Blog";
 import { BsArrowUp } from "react-icons/bs";
@@ -49,7 +49,7 @@ const Blog3 = () => {
       <Navbar isOpen={isOpen} toggle={toggle} />
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Header
-        title="Market Research Tips for Small Business Owners"
+        title="Achieving Effective Brand Management"
         pages={pages}
         page="Blog Post"
         bgImg={bgImg}
@@ -70,7 +70,7 @@ const Blog3 = () => {
         recentPost1Title="How Small Business Owners Can Succeed in Market Research This Year"
         recentPost1Img={blog1}
         recentPost2="/blog-2"
-        recentPost2Title="Achieving Effective Brand Management"
+        recentPost2Title="Implementing Digital Transformation"
         recentPost2Img={blog2}
       />
       <Footer />

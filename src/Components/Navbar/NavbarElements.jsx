@@ -49,8 +49,8 @@ export const NavTitle = styled(Link)`
 `;
 
 export const NavLogo = styled.img`
-  width: 130px;
-  height: 130px;
+  width: 100px;
+  height: 100px;
   transform: translateY(-5%);
 `;
 

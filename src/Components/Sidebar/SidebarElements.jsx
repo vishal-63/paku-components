@@ -8,11 +8,11 @@ export const SidebarContainer = styled.aside`
   display: grid;
   background: #fff;
   align-items: center;
-  top: 0;
   left: 0;
   transition: 0.5s all ease-in-out;
-  opacity: ${({ isOpen }) => (isOpen ? "100%" : "0")};
+  visibility: ${({ isOpen }) => (isOpen ? "visible" : "hidden")};
   top: ${({ isOpen }) => (isOpen ? "0" : "-100%")};
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 `;
 
 export const SidebarWrapper = styled.div`

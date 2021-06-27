@@ -6,10 +6,10 @@ import {
   BrandsImgWrapper,
   BrandsImg,
 } from "./BrandElements";
-import img1 from "../../../Images/honda.png";
+import img1 from "../../../Images/honda.webp";
 import img2 from "../../../Images/hyundai.png";
-import img3 from "../../../Images/toyota.png";
-import img4 from "../../../Images/volkswagen.png";
+import img3 from "../../../Images/toyota.webp";
+import img4 from "../../../Images/volkswagen.webp";
 
 class Brands extends Component {
   render() {

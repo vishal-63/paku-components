@@ -8,7 +8,7 @@ import Header from "../Components/Header";
 import { ToTopArrow } from "../Components/Infosection/InfoElements";
 import bgImg from "../../src/Images/blog1-bg.jpg";
 import blog1 from "../../src/Images/blog-1.jpg";
-import blog2 from "../../src/Images/blog-2.jpg";
+import blog2 from "../../src/Images/blog-2.webp";
 import blog3 from "../../src/Images/blog-3.jpg";
 import Blog from "../Components/Blogs/Blog";
 import { BsArrowUp } from "react-icons/bs";

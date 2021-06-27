@@ -29,7 +29,7 @@ import {
 import { BiCalendarAlt, BiMessageAlt, BiSearch } from "react-icons/bi";
 import { BsFillPersonFill } from "react-icons/bs";
 import blogImg1 from "../../../Images/blog-1.jpg";
-import blogImg2 from "../../../Images/blog-2.jpg";
+import blogImg2 from "../../../Images/blog-2.webp";
 import blogImg3 from "../../../Images/blog-3.jpg";
 
 const BlogPage = () => {
@@ -220,7 +220,7 @@ const BlogPage = () => {
                   <PostDate>24</PostDate>
                   <PostMonth>MAY</PostMonth>
                 </PostDay>
-                <PostTitle>
+                <PostTitle to="/blog-1">
                   Market Research Tips For Small Business Owners
                 </PostTitle>
               </li>
@@ -235,7 +235,9 @@ const BlogPage = () => {
                   <PostDate>12</PostDate>
                   <PostMonth>MAY</PostMonth>
                 </PostDay>
-                <PostTitle>Implementing Digital Transformation</PostTitle>
+                <PostTitle to="/blog-2">
+                  Implementing Digital Transformation
+                </PostTitle>
               </li>
               <li
                 style={{
@@ -248,7 +250,9 @@ const BlogPage = () => {
                   <PostDate>03</PostDate>
                   <PostMonth>MAY</PostMonth>
                 </PostDay>
-                <PostTitle>Achieving Effective Brand Management</PostTitle>
+                <PostTitle to="/blog-3">
+                  Achieving Effective Brand Management
+                </PostTitle>
               </li>
             </PostList>
           </AsideBox>

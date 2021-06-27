@@ -42,17 +42,16 @@ const HomeLink = styled(Link)`
 `;
 
 const Header = ({ title, page, pages, bgImg }) => {
-  console.log(pages);
   return (
     <>
       <PageTitle bgImg={bgImg}>{title}</PageTitle>
       <PageCrumb>
         {pages.map((pages, index) => {
           return (
-            <>
+            <div key={index}>
               <HomeLink to={pages.link}>{pages.page}</HomeLink>{" "}
               &nbsp;&nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp;&nbsp;
-            </>
+            </div>
           );
         })}
         {page}

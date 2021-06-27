@@ -13,15 +13,11 @@ import {
   NavLinks,
 } from "./NavbarElements";
 
-const Navbar = ({ isOpen, toggle }) => {
+const Navbar = ({ isOpen, toggle, style }) => {
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
-    if (window.scrollY >= 35) {
-      setScrollNav(true);
-    } else {
-      setScrollNav(false);
-    }
+    window.scrollY >= 35 ? setScrollNav(true) : setScrollNav(false);
   };
 
   useEffect(() => {
@@ -29,7 +25,7 @@ const Navbar = ({ isOpen, toggle }) => {
   }, []);
 
   return (
-    <NavbarContainer scrollNav={scrollNav} isOpen={isOpen}>
+    <NavbarContainer scrollNav={scrollNav} isOpen={isOpen} style={style}>
       <NavWrapper>
         <NavTitle to="/">
           <NavLogo src={logo}></NavLogo>

@@ -10,7 +10,11 @@ import {
 const Sidebar = ({ isOpen, toggle }) => {
   return (
     <SidebarContainer isOpen={isOpen}>
-      <Navbar isOpen={isOpen} toggle={toggle} />
+      <Navbar
+        isOpen={isOpen}
+        toggle={toggle}
+        style={{ position: "relative", boxShadow: "0 0 0" }}
+      />
       <SidebarWrapper>
         <SidebarMenu>
           <SidebarLink to="/about">About</SidebarLink>

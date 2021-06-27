@@ -51,15 +51,14 @@ export const ProductCardSection = styled.div`
 export const ProductCard = styled.div`
   background-color: #fff;
   width: 250px;
-  height: 350px;
+
   padding: 1rem 1rem 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
   box-shadow: 0 0 29px 0 rgb(0 0 0 / 19%);
-  -webkit-box-shadow: 0 0 29px 0 rgb(0 0 0 / 19%);
-  -moz-box-shadow: 0 0 29px 0 rgb(0 0 0 / 19%);
+
   overflow: hidden;
 
   &::after {
@@ -70,21 +69,11 @@ export const ProductCard = styled.div`
     position: absolute;
     bottom: 0;
     transform: translateX(-101%);
+    transition: 0.3s linear;
   }
 
   &:hover::after {
     transform: translateX(0);
-    transition: 0.5s linear;
-  }
-
-  @media (max-width: 1024px) {
-    width: 200px;
-    height: 300px;
-  }
-
-  @media (max-width: 900px) {
-    /* width: 250px; */
-    height: 300px;
   }
 `;
 
@@ -92,6 +81,7 @@ export const ProductCardTitle = styled.h2`
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #000;
+  margin: 1rem 0;
 `;
 
 export const ProductCardImgWrapper = styled.div`
@@ -99,6 +89,7 @@ export const ProductCardImgWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 1rem 0 0;
 `;
 
 export const ProductCardImg = styled.img`
@@ -114,11 +105,11 @@ export const ProductCardLink = styled(Link)`
   font-size: 1rem;
   color: #000;
   border-top: 1px solid rgba(0, 0, 0, 0.3);
-  margin-bottom: 10px;
+  margin-bottom: 0.75rem;
 
-  @media (max-width: 1024px) {
+  /* @media (max-width: 1024px) {
     margin-bottom: 0;
-  }
+  } */
 
   @media (max-width: 900px) {
     padding-top: 15px;

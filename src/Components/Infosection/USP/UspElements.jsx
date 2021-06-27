@@ -58,7 +58,7 @@ export const UspCard = styled.div`
 
   @media (max-width: 900px) {
     width: 200px;
-    padding: 1rem 1.8rem;
+    padding: 0.75rem 1rem;
   }
 
   @media (max-width: 540px) {
@@ -104,7 +104,7 @@ export const UspCardTitle = styled.h3`
   font-family: Helvetica, sans-serif;
 
   @media (max-width: 900px) {
-    margin-top: 10px;
+    margin-top: 0.675rem;
   }
 `;
 
@@ -113,4 +113,8 @@ export const UspCardText = styled.p`
   font-size: 0.875rem;
   letter-spacing: 0.3px;
   margin-top: 1.5rem;
+
+  @media (max-width: 900px) {
+    margin-top: 1rem;
+  }
 `;

@@ -289,7 +289,7 @@ const Blog = (props) => {
                   <PostDate>24</PostDate>
                   <PostMonth>MAY</PostMonth>
                 </PostDay>
-                <PostTitle>
+                <PostTitle to="/blog-1">
                   Market Research Tips For Small Business Owners
                 </PostTitle>
               </li>
@@ -304,7 +304,9 @@ const Blog = (props) => {
                   <PostDate>12</PostDate>
                   <PostMonth>MAY</PostMonth>
                 </PostDay>
-                <PostTitle>Implementing Digital Transformation</PostTitle>
+                <PostTitle to="/blog-2">
+                  Implementing Digital Transformation
+                </PostTitle>
               </li>
               <li
                 style={{
@@ -317,7 +319,9 @@ const Blog = (props) => {
                   <PostDate>03</PostDate>
                   <PostMonth>MAY</PostMonth>
                 </PostDay>
-                <PostTitle>Achieving Effective Brand Management</PostTitle>
+                <PostTitle to="/blog-3">
+                  Achieving Effective Brand Management
+                </PostTitle>
               </li>
             </PostList>
           </AsideBox>

@@ -261,5 +261,14 @@ export const RecentPostTitle = styled.h4`
   color: #151515;
   line-height: 1.3;
   font-weight: 500;
-  margin: 1.25rem 0;
+  margin: 0.5rem 0;
+  transition: all 0.3s ease;
+
+  @media (min-width: 768px) {
+    margin: 1.25rem 0;
+  }
+
+  &:hover {
+    color: #3a7bd5;
+  }
 `;
