@@ -138,7 +138,7 @@ export const ToTopArrow = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  visibility: ${({ scrollNav }) => (scrollNav ? "visible" : "hidden")};
+  visibility: ${({ showToTop }) => (showToTop ? "visible" : "hidden")};
   transition: 0.3s visibility ease-in;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);

@@ -12,8 +12,6 @@ import {
   InfoListItems,
   InfoImg,
   InfoBtn,
-  InfoBtnSpan1,
-  InfoBtnSpan2,
 } from "./InfoElements";
 import Products from "./Products";
 import UspCards from "./USP";

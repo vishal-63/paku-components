@@ -20,7 +20,7 @@ class Footer extends Component {
     return (
       <FooterContainer>
         <FooterWrapper>
-          <FooterLogo src={logo}></FooterLogo>
+          <FooterLogo src={logo} alt="Paku Components Logo"></FooterLogo>
           <FooterSectionWrapper>
             <FooterIcon>
               <MdLocationOn />

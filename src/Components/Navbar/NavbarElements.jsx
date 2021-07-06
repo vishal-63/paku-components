@@ -93,6 +93,8 @@ export const NavMenu = styled.div`
   list-style: none;
   text-align: center;
   padding-left: 3rem;
+  color: ${({ scrollNav }) => (scrollNav ? "#01194f" : "#00b4d8")};
+  border-color: ${({ scrollNav }) => (scrollNav ? "#01194f" : "#00b4d8")};
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -100,7 +102,7 @@ export const NavMenu = styled.div`
 `;
 
 export const NavLinks = styled(Link)`
-  color: ${({ scrollNav }) => (scrollNav ? "#01194f" : "#00b4d8")};
+  color: inherit;
   padding: 0.5rem 1.2rem;
   cursor: pointer;
   text-decoration: none;
@@ -112,7 +114,7 @@ export const NavLinks = styled(Link)`
   text-transform: uppercase;
 
   &:hover {
-    border-color: ${({ scrollNav }) => (scrollNav ? "#01194f" : "#00b4d8")};
+    border-color: inherit;
     transition: all 0.2s ease-in;
   }
 

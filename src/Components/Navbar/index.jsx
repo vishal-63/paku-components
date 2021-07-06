@@ -28,7 +28,7 @@ const Navbar = ({ isOpen, toggle, style }) => {
     <NavbarContainer scrollNav={scrollNav} isOpen={isOpen} style={style}>
       <NavWrapper>
         <NavTitle to="/">
-          <NavLogo src={logo}></NavLogo>
+          <NavLogo src={logo} alt="Paku Components Logo"></NavLogo>
         </NavTitle>
         <MobileIcon onClick={toggle} isOpen={isOpen}>
           <GiHamburgerMenu />
@@ -36,19 +36,11 @@ const Navbar = ({ isOpen, toggle, style }) => {
         <CloseIcon onClick={toggle} isOpen={isOpen}>
           <FaTimes />
         </CloseIcon>
-        <NavMenu>
-          <NavLinks scrollNav={scrollNav} to="/about">
-            About
-          </NavLinks>
-          <NavLinks scrollNav={scrollNav} to="/">
-            Products
-          </NavLinks>
-          <NavLinks scrollNav={scrollNav} to="/blogs">
-            Blogs
-          </NavLinks>
-          <NavLinks scrollNav={scrollNav} to="/contact">
-            Contact
-          </NavLinks>
+        <NavMenu scrollNav={scrollNav}>
+          <NavLinks to="/about">About</NavLinks>
+          <NavLinks to="/">Products</NavLinks>
+          <NavLinks to="/blogs">Blogs</NavLinks>
+          <NavLinks to="/contact">Contact</NavLinks>
         </NavMenu>
       </NavWrapper>
     </NavbarContainer>

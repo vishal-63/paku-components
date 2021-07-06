@@ -67,7 +67,7 @@ export const FooterIcon = styled.div`
   }
 `;
 
-export const FooterText = styled.a`
+export const FooterText = styled.p`
   font-size: 0.7rem;
   color: #666;
   max-width: 160px;

@@ -53,7 +53,7 @@ const Blog = (props) => {
   const inputChange = () => {
     const searchLabel = document.getElementById("search-label");
     const searchInput = document.getElementById("search");
-    searchInput.value != ""
+    searchInput.value !== ""
       ? (searchLabel.innerHTML = "")
       : (searchLabel.innerHTML = "Search the blog...");
   };

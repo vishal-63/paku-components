@@ -42,7 +42,6 @@ import {
 } from "react-icons/fa";
 import { IoMdQuote } from "react-icons/io";
 import Parallax from "./Parallax/Parallax";
-import Brands from "../Infosection/Brands";
 
 const AboutPage = () => {
   const [current, setCurrent] = useState(0);

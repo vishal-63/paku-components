@@ -9,7 +9,7 @@ import {
   ProductCardImgWrapper,
   ProductCardSection,
 } from "./ProductElements";
-import img1 from "../../../Images/radiator.webp";
+import img1 from "../../../Images/radiator.jpg";
 import img2 from "../../../Images/core.jpg";
 import img3 from "../../../Images/condenser.png";
 import img4 from "../../../Images/intercooler.jpg";

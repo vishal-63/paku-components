@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import Herosection from "../Components/Herosection";
 import Navbar from "../Components/Navbar";
@@ -14,7 +14,7 @@ import BeatLoader from "react-spinners/BeatLoader";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [scrollNav, setScrollNav] = useState(false);
+  const [showToTop, setShowToTop] = useState(false);
   const [loading, setLoading] = useState(false);
 
   const toggle = () => {
@@ -26,8 +26,8 @@ const Home = () => {
   };
 
   const changeNav = () => {
-    if (window.scrollY >= 690) setScrollNav(true);
-    else setScrollNav(false);
+    if (window.scrollY >= 690) setShowToTop(true);
+    else setShowToTop(false);
   };
 
   document.addEventListener("scroll", changeNav);
@@ -73,7 +73,7 @@ const Home = () => {
           <ContactSection />
           <Footer />
 
-          <ToTopArrow onClick={toggleHome} scrollNav={scrollNav}>
+          <ToTopArrow onClick={toggleHome} showToTop={showToTop}>
             <BsArrowUp />
           </ToTopArrow>
         </>
