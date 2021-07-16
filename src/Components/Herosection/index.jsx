@@ -66,7 +66,13 @@ const Herosection = ({ slides }) => {
           >
             {index === current && (
               <HeroSlide key={index}>
-                <HeroImage src={slide.image} alt="img1" />
+                <HeroImage
+                  srcset={slide.srcset}
+                  sizes="(max-width: 800px) 480px,
+            800px"
+                  src={slide.image}
+                  alt="Background Image Slider"
+                />
                 <HeroText>
                   <HeroHeading>{slide.heading}</HeroHeading>
                   <HeroSubtitle>{slide.subtitle}</HeroSubtitle>

@@ -4,18 +4,19 @@ import {
   BrandsContainer,
   BrandsWrapper,
   BrandsImgWrapper,
-  BrandsImg,
 } from "./BrandElements";
 import img1 from "../../../Images/honda.png";
 import img2 from "../../../Images/hyundai.png";
 import img3 from "../../../Images/toyota.png";
 import img4 from "../../../Images/volkswagen.png";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "./Brands.css";
 
 class Brands extends Component {
   render() {
     return (
       <BrandsContainer>
-        <InfoHeading style={{ color: "#3a7bd5" }}>Our Partners</InfoHeading>
+        <InfoHeading>Our Partners</InfoHeading>
         <InfoSubtitle>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
           quasi!
@@ -23,10 +24,30 @@ class Brands extends Component {
 
         <BrandsWrapper>
           <BrandsImgWrapper data-aos="zoom-in">
-            <BrandsImg src={img1} alt="honda" />
-            <BrandsImg src={img2} alt="hyundai" />
-            <BrandsImg src={img3} alt="toyota" />
-            <BrandsImg src={img4} alt="volkwagen" />
+            <LazyLoadImage
+              src={img1}
+              alt="Honda Logo"
+              className="brand-img"
+              effect="opacity"
+            />
+            <LazyLoadImage
+              src={img2}
+              alt="Hyundai Logo"
+              className="brand-img"
+              effect="opacity"
+            />
+            <LazyLoadImage
+              src={img3}
+              alt="Toyota Logo"
+              className="brand-img"
+              effect="opacity"
+            />
+            <LazyLoadImage
+              src={img4}
+              alt="Volkwagen Logo"
+              className="brand-img"
+              effect="opacity"
+            />
           </BrandsImgWrapper>
         </BrandsWrapper>
       </BrandsContainer>

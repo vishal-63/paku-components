@@ -4,7 +4,6 @@ import {
   ProductCardsWrapper,
   ProductCard,
   ProductCardTitle,
-  ProductCardImg,
   ProductCardLink,
   ProductCardImgWrapper,
   ProductCardSection,
@@ -19,6 +18,7 @@ import SwiperCore, { Navigation } from "swiper/core";
 import "swiper/swiper.min.css";
 import "swiper/components/navigation/navigation.min.css";
 import "./Swiper.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 class Products extends Component {
   render() {
@@ -26,7 +26,7 @@ class Products extends Component {
 
     return (
       <ProductCardsContainer>
-        <InfoHeading style={{ color: "#3a7bd5" }}>Products</InfoHeading>
+        <InfoHeading>Products</InfoHeading>
         <InfoSubtitle>The widest range of products you will find.</InfoSubtitle>
 
         <ProductCardsWrapper>
@@ -35,7 +35,12 @@ class Products extends Component {
               <ProductCardSection>
                 <ProductCard data-aos="flip-right">
                   <ProductCardImgWrapper>
-                    <ProductCardImg src={img1} alt="radiator"></ProductCardImg>
+                    <LazyLoadImage
+                      src={img1}
+                      alt="radiator"
+                      effect="opacity"
+                      style={{ maxHeight: "200px", maxWidth: "200px" }}
+                    ></LazyLoadImage>
                   </ProductCardImgWrapper>
                   <ProductCardTitle>Radiator</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
@@ -43,7 +48,12 @@ class Products extends Component {
 
                 <ProductCard data-aos="flip-right" data-aos-delay="100">
                   <ProductCardImgWrapper>
-                    <ProductCardImg src={img2} alt="core"></ProductCardImg>
+                    <LazyLoadImage
+                      src={img2}
+                      alt="core"
+                      effect="opacity"
+                      style={{ maxHeight: "200px", maxWidth: "200px" }}
+                    ></LazyLoadImage>
                   </ProductCardImgWrapper>
                   <ProductCardTitle>Core</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
@@ -51,7 +61,12 @@ class Products extends Component {
 
                 <ProductCard data-aos="flip-right" data-aos-delay="200">
                   <ProductCardImgWrapper>
-                    <ProductCardImg src={img3} alt="condenser"></ProductCardImg>
+                    <LazyLoadImage
+                      src={img3}
+                      alt="condenser"
+                      effect="opacity"
+                      style={{ maxHeight: "200px", maxWidth: "200px" }}
+                    ></LazyLoadImage>
                   </ProductCardImgWrapper>
                   <ProductCardTitle>Condenser</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
@@ -63,30 +78,36 @@ class Products extends Component {
               <ProductCardSection>
                 <ProductCard data-aos="flip-right" data-aos-delay="300">
                   <ProductCardImgWrapper>
-                    <ProductCardImg
+                    <LazyLoadImage
                       src={img4}
                       alt="intercooler"
-                    ></ProductCardImg>
+                      effect="opacity"
+                      style={{ maxHeight: "200px", maxWidth: "200px" }}
+                    ></LazyLoadImage>
                   </ProductCardImgWrapper>
                   <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
                 </ProductCard>
                 <ProductCard data-aos="flip-right" data-aos-delay="300">
                   <ProductCardImgWrapper>
-                    <ProductCardImg
+                    <LazyLoadImage
                       src={img4}
                       alt="intercooler"
-                    ></ProductCardImg>
+                      effect="opacity"
+                      style={{ maxHeight: "200px", maxWidth: "200px" }}
+                    ></LazyLoadImage>
                   </ProductCardImgWrapper>
                   <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
                 </ProductCard>
                 <ProductCard data-aos="flip-right" data-aos-delay="300">
                   <ProductCardImgWrapper>
-                    <ProductCardImg
+                    <LazyLoadImage
                       src={img4}
                       alt="intercooler"
-                    ></ProductCardImg>
+                      effect="opacity"
+                      style={{ maxHeight: "200px", maxWidth: "200px" }}
+                    ></LazyLoadImage>
                   </ProductCardImgWrapper>
                   <ProductCardTitle>Intercooler</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>

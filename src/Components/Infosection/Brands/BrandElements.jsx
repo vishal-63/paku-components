@@ -32,27 +32,3 @@ export const BrandsImgWrapper = styled.div`
     grid-template-columns: auto auto;
   }
 `;
-
-export const BrandsImg = styled.img`
-  max-width: 200px;
-  max-height: 100px;
-  filter: grayscale(1) drop-shadow(0px 3px 20px #3a7bd533);
-  transition: all 0.4s ease;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  &:hover {
-    transition: all 0.4s ease;
-    filter: drop-shadow(0px 3px 20px #3a7bd533);
-  }
-
-  @media (max-width: 900px) {
-    max-width: 150px;
-  }
-
-  @media (max-width: 540px) {
-    width: 100px;
-    height: 100px;
-  }
-`;

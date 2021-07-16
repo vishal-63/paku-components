@@ -77,7 +77,7 @@ export const ProductCard = styled.div`
   }
 `;
 
-export const ProductCardTitle = styled.h2`
+export const ProductCardTitle = styled.h3`
   font-size: 1.5rem;
   text-transform: uppercase;
   color: #000;
@@ -90,11 +90,6 @@ export const ProductCardImgWrapper = styled.div`
   justify-content: center;
   align-items: center;
   margin: 1rem 0 0;
-`;
-
-export const ProductCardImg = styled.img`
-  max-width: 200px;
-  max-height: 200px;
 `;
 
 export const ProductCardLink = styled(Link)`

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Suspense, lazy } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import Herosection from "../Components/Herosection";
 import Navbar from "../Components/Navbar";
@@ -6,16 +6,17 @@ import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
 import { SliderData } from "../Components/Herosection/SliderData";
 import Infosection from "../Components/Infosection";
-import ContactSection from "../Components/Contact Form";
+// import ContactSection from "../Components/Contact Form";
 import Footer from "../Components/Footer";
 import { ToTopArrow } from "../Components/Infosection/InfoElements";
 import { BsArrowUp } from "react-icons/bs";
-import BeatLoader from "react-spinners/BeatLoader";
+const ContactSection = React.lazy(() =>
+  import("../Components/Contact Form/index.jsx")
+);
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showToTop, setShowToTop] = useState(false);
-  const [loading, setLoading] = useState(false);
 
   const toggle = () => {
     setIsOpen(!isOpen);
@@ -32,52 +33,21 @@ const Home = () => {
 
   document.addEventListener("scroll", changeNav);
 
-  // useEffect(() => {
-  //   setLoading(true);
-  //   setTimeout(() => {
-  //     setLoading(false);
-  //   }, 3000);
-  // }, []);
-
-  document.onreadystatechange = function () {
-    if (document.readyState !== "complete") setLoading(true);
-    else setLoading(false);
-  };
-
-  const loadingScreen = {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    width: "100vw",
-    height: "100vh",
-    backgroundColor: "#fff",
-    transition: "all 0.4s ease-out",
-  };
-
   return (
     <>
-      {loading ? (
-        <BeatLoader
-          color={"#00194f"}
-          loading={loading}
-          size={20}
-          css={loadingScreen}
-        />
-      ) : (
-        <>
-          <Topbar color="#efefef" border="rgba(255, 255, 255, 0.2)" />
-          <Navbar isOpen={isOpen} toggle={toggle} />
-          <Sidebar isOpen={isOpen} toggle={toggle} />
-          <Herosection slides={SliderData} />
-          <Infosection />
-          <ContactSection />
-          <Footer />
+      <Topbar color="#efefef" border="rgba(255, 255, 255, 0.2)" />
+      <Navbar isOpen={isOpen} toggle={toggle} />
+      <Sidebar isOpen={isOpen} toggle={toggle} />
+      <Herosection slides={SliderData} />
+      <Infosection />
+      <Suspense fallback={<div>loading..</div>}>
+        <ContactSection />
+      </Suspense>
+      <Footer />
 
-          <ToTopArrow onClick={toggleHome} showToTop={showToTop}>
-            <BsArrowUp />
-          </ToTopArrow>
-        </>
-      )}
+      <ToTopArrow onClick={toggleHome} showToTop={showToTop}>
+        <BsArrowUp />
+      </ToTopArrow>
     </>
   );
 };
