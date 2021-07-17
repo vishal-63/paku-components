@@ -1,5 +1,6 @@
 import React from "react";
 import { Map, Marker, GoogleApiWrapper } from "google-maps-react";
+import { LazyLoadComponent } from "react-lazy-load-image-component";
 import {
   ContactSectionContainer,
   ContactSectionWrapper,
@@ -84,16 +85,18 @@ class ContactSection extends React.Component {
               />
             </ContactForm>
           </ContactFormWrapper>
-          <MapWrapper>
-            <Map
-              className="map"
-              google={this.props.google}
-              zoom={15}
-              initialCenter={{ lat: 12.9396425, lng: 77.5572237 }}
-            >
-              <Marker />
-            </Map>
-          </MapWrapper>
+          <LazyLoadComponent>
+            <MapWrapper>
+              <Map
+                className="map"
+                google={this.props.google}
+                zoom={15}
+                initialCenter={{ lat: 12.9396425, lng: 77.5572237 }}
+              >
+                <Marker />
+              </Map>
+            </MapWrapper>
+          </LazyLoadComponent>
         </ContactSectionWrapper>
       </ContactSectionContainer>
     );

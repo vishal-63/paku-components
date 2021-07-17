@@ -1,13 +1,6 @@
 import React, { Suspense, lazy } from "react";
 import { HashRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
-// import Home from "./Pages/index.jsx";
-// import About from "./Pages/About.jsx";
-// import Contact from "./Pages/Contact.jsx";
-// import Blogs from "./Pages/Blogs";
-// import Blog1 from "./Pages/Blog1";
-// import Blog2 from "./Pages/Blog2";
-// import Blog3 from "./Pages/Blog3";
 import BeatLoader from "react-spinners/BeatLoader";
 const Home = React.lazy(() => import("./Pages/index.jsx"));
 const About = React.lazy(() => import("./Pages/About.jsx"));

@@ -5,7 +5,7 @@ import Sidebar from "../Components/Sidebar";
 import Topbar from "../Components/Topbar";
 import Footer from "../Components/Footer";
 import bgImg from "../Images/contact-background.jpg";
-import ContactPage from "../Components/Contact/ContactPage";
+import ContactPage from "../Components/Contact Page/ContactPage";
 import { ToTopArrow } from "../Components/Infosection/InfoElements";
 import { BsArrowUp } from "react-icons/bs";
 import { animateScroll as scroll } from "react-scroll";

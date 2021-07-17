@@ -8,7 +8,7 @@ import {
   ContactFormInput,
   ContactFormButton,
   ContactFormMessage,
-} from "../Contact Form/ContactFormElements";
+} from "../Contact Section/ContactFormElements";
 import {
   ContactInfo,
   ContactInfoTitle,

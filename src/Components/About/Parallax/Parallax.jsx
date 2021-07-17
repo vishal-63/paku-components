@@ -10,7 +10,7 @@ import {
   ParallaxNumber,
   ParallaxText,
 } from "./ParallaxElements";
-import parallaxImage from "../../../Images/parallax.jpg";
+import parallaxImage from "../../../Images/parallax.png";
 
 const Parallax = () => {
   const [offsetY, setOffsetY] = useState(0);
