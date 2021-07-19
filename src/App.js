@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from "react";
-import { HashRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import "./App.css";
 import BeatLoader from "react-spinners/BeatLoader";
 const Home = React.lazy(() => import("./Pages/index.jsx"));
