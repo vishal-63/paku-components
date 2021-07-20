@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import logo from "../../Images/logo.png";
+import logo from "../../Images/logo-copy.png";
 import { MdLocationOn } from "react-icons/md";
 import { BiPhone } from "react-icons/bi";
 import { FaFacebookF, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";

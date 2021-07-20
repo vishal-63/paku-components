@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import logo from "../../Images/logo.png";
+import logo from "../../Images/logo-copy.png";
 import { FaTimes } from "react-icons/fa";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
