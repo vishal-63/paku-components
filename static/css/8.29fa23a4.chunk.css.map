@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack://src/Components/About/AboutPage.css"],"names":[],"mappings":"AAAA,MACE,iBAEF,CAEA,mBAHE,2BAMF,CAHA,aACE,kBAEF","file":"8.29fa23a4.chunk.css","sourcesContent":[".text {\r\n  visibility: hidden;\r\n  transition: all 0.75s ease-in;\r\n}\r\n\r\n.text.active {\r\n  visibility: visible;\r\n  transition: all 0.75s ease-in;\r\n}\r\n"]}
