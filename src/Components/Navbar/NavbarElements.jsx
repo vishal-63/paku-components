@@ -106,12 +106,12 @@ export const NavLinks = styled(Link)`
   padding: 0.5rem 1.2rem;
   cursor: pointer;
   text-decoration: none;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   margin: 0 10px;
   font-weight: 500;
   border: 1px solid transparent;
   transition: all 0.2s ease;
-  text-transform: uppercase;
+  letter-spacing: 1.15px;
 
   &:hover {
     border-color: inherit;

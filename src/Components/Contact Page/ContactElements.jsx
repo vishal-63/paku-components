@@ -51,8 +51,7 @@ export const ContactInfoTitle = styled.h5`
 export const ContactText = styled.p`
   color: #00030a;
   font-size: 14px;
-  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 1rem;
   padding: 0;
 

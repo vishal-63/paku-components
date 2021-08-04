@@ -139,6 +139,7 @@ export const ContactFormButton = styled.input`
   text-align: center;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  font-weight: 500;
 
   &:hover {
     background-color: #012883;

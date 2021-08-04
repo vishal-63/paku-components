@@ -32,7 +32,7 @@ export const ParallaxContent = styled.div`
 
 export const ParallaxTitle = styled.p`
   font-size: 1.75rem;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #fff;
   margin-bottom: 1rem;
 
@@ -43,7 +43,7 @@ export const ParallaxTitle = styled.p`
 
 export const ParallaxSubtitle = styled.p`
   font-size: 1rem;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   margin-bottom: 2rem;
   padding: 0 16px;
@@ -76,7 +76,7 @@ export const ParallaxDiv = styled.div`
 `;
 
 export const ParallaxNumber = styled.div`
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   padding: 0 1rem 0.5rem;
   margin-bottom: 0.75rem;
@@ -90,7 +90,7 @@ export const ParallaxNumber = styled.div`
 
 export const ParallaxText = styled.p`
   font-size: 1.25rem;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
 
   @media (min-width: 900px) {

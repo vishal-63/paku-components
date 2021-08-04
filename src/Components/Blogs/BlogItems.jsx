@@ -85,7 +85,7 @@ export const ArticleDateContainer = styled.div`
 
 export const ArticleDate = styled.span`
   font-size: 2.25rem;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #151515;
   line-height: 1.05;
   padding: 0.675rem 1.875rem 0;
@@ -103,7 +103,7 @@ export const ArticleMonth = styled.span`
 
 export const ArticleTitle = styled.h4`
   font-size: 1.25rem;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   letter-spacing: 0;
   margin-top: 1rem;
@@ -197,7 +197,7 @@ export const ArticleFooter = styled.div`
 
 export const ArticleFooterText = styled.h5`
   font-size: 1.125rem;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
 `;
 
@@ -257,7 +257,7 @@ export const RecentPost = styled(Link)`
 
 export const RecentPostTitle = styled.h4`
   font-size: 1.25rem;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #151515;
   line-height: 1.3;
   font-weight: 500;

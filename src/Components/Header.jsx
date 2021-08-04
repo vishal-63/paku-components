@@ -13,7 +13,7 @@ const PageTitle = styled.div`
   min-height: 100px;
   color: #fff;
   font-size: 1.5rem;
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: Helvetica, sans-serif;
 
   @media (min-width: 900px) {
     min-height: 192px;
@@ -28,7 +28,7 @@ const PageCrumb = styled.div`
   align-items: center;
   background-color: #eff1f7;
   height: 65px;
-  font-family: "Lato", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
 
   @media (min-width: 1100px) {
@@ -49,8 +49,8 @@ const Header = ({ title, page, pages, bgImg }) => {
         {pages.map((pages, index) => {
           return (
             <div key={index}>
-              <HomeLink to={pages.link}>{pages.page}</HomeLink>{" "}
-              &nbsp;&nbsp;&nbsp;&nbsp; > &nbsp;&nbsp;&nbsp;&nbsp;
+              <HomeLink to={pages.link}>{pages.page}</HomeLink>
+              &nbsp;&nbsp;&nbsp;&nbsp; &gt; &nbsp;&nbsp;&nbsp;&nbsp;
             </div>
           );
         })}

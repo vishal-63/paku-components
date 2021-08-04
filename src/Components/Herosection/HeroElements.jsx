@@ -7,7 +7,7 @@ export const HerosectionSlider = styled.section`
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-color: #121212;
+  background-color: #040f23;
 
   @media (max-width: 540px) {
     height: 98vh;

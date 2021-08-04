@@ -232,8 +232,7 @@ const Blog = (props) => {
               <Category className="active">
                 <p
                   style={{
-                    fontFamily:
-                      'Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif',
+                    fontFamily: "'Montserrat', sans-serif",
                   }}
                 >
                   All Categories
@@ -243,8 +242,7 @@ const Blog = (props) => {
               <Category>
                 <p
                   style={{
-                    fontFamily:
-                      'Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif',
+                    fontFamily: "'Montserrat', sans-serif",
                   }}
                 >
                   Consulting
@@ -254,8 +252,7 @@ const Blog = (props) => {
               <Category>
                 <p
                   style={{
-                    fontFamily:
-                      'Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif',
+                    fontFamily: "'Montserrat', sans-serif",
                   }}
                 >
                   Analytics
@@ -265,8 +262,7 @@ const Blog = (props) => {
               <Category>
                 <p
                   style={{
-                    fontFamily:
-                      'Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif',
+                    fontFamily: "'Montserrat', sans-serif",
                   }}
                 >
                   Management

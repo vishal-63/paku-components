@@ -60,7 +60,7 @@ export const BlogArticle = styled(Link)`
 `;
 
 export const BlogArticleTitle = styled.h3`
-  font-family: Poppins, Arial, Helvetica, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1.5rem;
   font-weight: 400;
   color: #151515;
@@ -179,7 +179,7 @@ export const SearchInput = styled.input`
   display: block;
   width: 100%;
   padding: 1rem 3.75rem 1rem 1.25rem;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #9b9b9b;
   outline: none;
@@ -195,7 +195,7 @@ export const SearchLabel = styled.label`
   line-height: 1.5rem;
   transform: translateY(50%);
   color: #9b9b9b;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
 `;
 
@@ -224,7 +224,7 @@ export const AsideBox = styled.div`
 `;
 
 export const AsideBoxTitle = styled.p`
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 1rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -251,7 +251,7 @@ export const AsideBoxTitle = styled.p`
 
 export const CategoriesList = styled.ul`
   color: #151515;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.125rem;
   margin-top: 2.5rem;
   list-style-type: none;
@@ -318,7 +318,7 @@ export const PostDay = styled.time`
 `;
 
 export const PostDate = styled.span`
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   color: #151515;
   line-height: 1;
@@ -326,7 +326,7 @@ export const PostDate = styled.span`
 `;
 
 export const PostMonth = styled.span`
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.75rem;
   color: #9b9b9b;
   text-transform: uppercase;
@@ -335,7 +335,7 @@ export const PostMonth = styled.span`
 `;
 
 export const PostTitle = styled(Link)`
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 0.875rem;
   color: #151515;
   letter-spacing: 0.05em;

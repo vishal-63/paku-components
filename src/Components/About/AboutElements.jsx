@@ -74,7 +74,7 @@ export const InfoSectionButton = styled.div`
   letter-spacing: 0.5px;
   font-weight: 500;
   line-height: 1.2;
-  font-family: Lato, "sans serif";
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0 0.75rem;
   user-select: none;
   cursor: pointer;
@@ -131,13 +131,13 @@ export const InfoHeading = styled.h2`
   font-size: 1.3rem;
   color: #000;
   font-weight: 600;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   margin-bottom: 0.625rem;
 `;
 
 export const InfoText = styled.div`
   font-size: 0.9rem;
-  font-family: lato, "sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   line-height: 1.71429;
   color: #4a4a4a;
@@ -147,9 +147,9 @@ export const InfoText = styled.div`
   margin-top: 20px;
 `;
 
-export const TeamTitle = styled.h2`
+export const TeamTitle = styled.h3`
   font-size: 2.25rem;
-  font-family: Poppins, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 400;
   color: #000;
   margin-bottom: 2.5rem;
@@ -204,14 +204,14 @@ export const MemberImage = styled.img`
 `;
 
 export const MemberName = styled.h3`
-  font-family: Poppins, "sans-serif";
+  font-family: "Montserrat", sans-serif;
   font-size: 1.25rem;
   color: #3a7bd5;
   margin: 0.625rem 0;
 `;
 
 export const MemberPosition = styled.p`
-  font-family: Poppins, "san serif";
+  font-family: "Montserrat", sans-serif;
   font-size: 1rem;
   color: #9b9b9b;
   padding-bottom: 0.625rem;
@@ -304,13 +304,13 @@ export const ClientInfo = styled.div`
 
 export const ClientName = styled.p`
   font-size: 1.25rem;
-  font-family: Poppins, "sans serif";
+  font-family: "Montserrat", sans-serif;
   color: #151515;
 `;
 
 export const ClientSubtitle = styled.p`
   font-size: 1rem;
-  font-family: Poppins, "sans serif";
+  font-family: "Montserrat", sans-serif;
   color: #4a4a4a;
 `;
 
@@ -330,7 +330,7 @@ export const ClientIcon = styled.div`
 
 export const ClientText = styled.p`
   font-size: 0.875rem;
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-left: 1rem;
 
   @media (min-width: 768px) {

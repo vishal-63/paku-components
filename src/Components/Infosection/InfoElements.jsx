@@ -89,8 +89,9 @@ export const InfoList = styled.ul`
 `;
 
 export const InfoListItems = styled.li`
-  margin-top: 8px;
-  padding-left: 20px;
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  vertical-align: center;
 `;
 
 export const InfoImg = styled.img`
@@ -142,6 +143,7 @@ export const ToTopArrow = styled.div`
   transition: 0.3s visibility ease-in;
   cursor: pointer;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  z-index: 9;
 
   @media (max-width: 768px) {
     bottom: 1rem;
