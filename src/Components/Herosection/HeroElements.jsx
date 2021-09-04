@@ -56,6 +56,7 @@ export const HeroHeading = styled.h1`
   z-index: 999;
 
   @media screen and (max-width: 540px) {
+    text-align: center;
     font-size: 30px;
   }
 `;

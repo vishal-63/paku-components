@@ -68,7 +68,7 @@ class Products extends Component {
                       style={{ maxHeight: "200px", maxWidth: "200px" }}
                     ></LazyLoadImage>
                   </ProductCardImgWrapper>
-                  <ProductCardTitle>Condenser</ProductCardTitle>
+                  <ProductCardTitle>Top-Bottom</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
                 </ProductCard>
               </ProductCardSection>
@@ -85,7 +85,7 @@ class Products extends Component {
                       style={{ maxHeight: "200px", maxWidth: "200px" }}
                     ></LazyLoadImage>
                   </ProductCardImgWrapper>
-                  <ProductCardTitle>Intercooler</ProductCardTitle>
+                  <ProductCardTitle>Condenser</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
                 </ProductCard>
                 <ProductCard data-aos="flip-right" data-aos-delay="300">
@@ -97,7 +97,7 @@ class Products extends Component {
                       style={{ maxHeight: "200px", maxWidth: "200px" }}
                     ></LazyLoadImage>
                   </ProductCardImgWrapper>
-                  <ProductCardTitle>Intercooler</ProductCardTitle>
+                  <ProductCardTitle>Cooler</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
                 </ProductCard>
                 <ProductCard data-aos="flip-right" data-aos-delay="300">
@@ -109,7 +109,7 @@ class Products extends Component {
                       style={{ maxHeight: "200px", maxWidth: "200px" }}
                     ></LazyLoadImage>
                   </ProductCardImgWrapper>
-                  <ProductCardTitle>Intercooler</ProductCardTitle>
+                  <ProductCardTitle>Fan Assembly</ProductCardTitle>
                   <ProductCardLink to="/">Show More</ProductCardLink>
                 </ProductCard>
               </ProductCardSection>

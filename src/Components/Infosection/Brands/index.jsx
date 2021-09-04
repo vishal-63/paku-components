@@ -18,8 +18,7 @@ class Brands extends Component {
       <BrandsContainer>
         <InfoHeading>Our Partners</InfoHeading>
         <InfoSubtitle>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime,
-          quasi!
+          The Brands we have partnered to provide BEST Quality Products
         </InfoSubtitle>
 
         <BrandsWrapper>
